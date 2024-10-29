@@ -1,0 +1,6 @@
+framework module OptionalFrameworkSDK {
+  umbrella header "OptionalFrameworkSDK.h"
+  export *
+
+  module * { export * }
+}

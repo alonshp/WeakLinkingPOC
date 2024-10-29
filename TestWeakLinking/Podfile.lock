@@ -1,0 +1,26 @@
+PODS:
+  - AlonSourcesSDK (1.0.0)
+  - OptionalFrameworkSDK (1.0.0)
+  - WeakLinkingPOCSDK (1.0.0)
+
+DEPENDENCIES:
+  - AlonSourcesSDK (from `../weakLinkingPOC`)
+  - OptionalFrameworkSDK (from `../OptionalFramework`)
+  - WeakLinkingPOCSDK (from `../weakLinkingPOC`)
+
+EXTERNAL SOURCES:
+  AlonSourcesSDK:
+    :path: "../weakLinkingPOC"
+  OptionalFrameworkSDK:
+    :path: "../OptionalFramework"
+  WeakLinkingPOCSDK:
+    :path: "../weakLinkingPOC"
+
+SPEC CHECKSUMS:
+  AlonSourcesSDK: b8eb0cb9097bff39afc46fa8e3fda2dd0ea84acd
+  OptionalFrameworkSDK: 2f940e5523db93d98f8de180325ff164b5fe4f35
+  WeakLinkingPOCSDK: 1a7bfe017bc8600af20b6d24384b9fa4140681bc
+
+PODFILE CHECKSUM: e4e2e8996ed1e393d1b5ca57b8d082a65073b95b
+
+COCOAPODS: 1.14.3

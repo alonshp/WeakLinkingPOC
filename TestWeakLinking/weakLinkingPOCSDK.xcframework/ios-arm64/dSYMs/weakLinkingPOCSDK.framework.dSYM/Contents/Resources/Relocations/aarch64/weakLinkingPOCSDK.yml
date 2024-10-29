@@ -1,0 +1,34 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/alonshprung/Library/Developer/Xcode/DerivedData/weakLinkingPOC-bkskapahlbksscfbeltsekvjrdlf/Build/Intermediates.noindex/ArchiveIntermediates/weakLinkingPOCSDK/InstallationBuildProductsLocation/Library/Frameworks/weakLinkingPOCSDK.framework/weakLinkingPOCSDK'
+relocations:
+  - { offsetInCU: 0x34, offset: 0x56302, size: 0x8, addend: 0x0, symName: _weakLinkingPOCSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x4F00, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x56337, size: 0x8, addend: 0x0, symName: _weakLinkingPOCSDKVersionNumber, symObjAddr: 0x40, symBinAddr: 0x4F40, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x5639C, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKC6sharedACvpZ', symObjAddr: 0x3E70, symBinAddr: 0xC180, symSize: 0x0 }
+  - { offsetInCU: 0x155, offset: 0x564A2, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKC6shared_WZ', symObjAddr: 0x140, symBinAddr: 0x4114, symSize: 0x30 }
+  - { offsetInCU: 0x16F, offset: 0x564BC, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKC6sharedACvau', symObjAddr: 0x170, symBinAddr: 0x4144, symSize: 0x54 }
+  - { offsetInCU: 0x18D, offset: 0x564DA, size: 0x8, addend: 0x0, symName: '_$sSSWOh', symObjAddr: 0x414, symBinAddr: 0x43E8, symSize: 0x28 }
+  - { offsetInCU: 0x1A1, offset: 0x564EE, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKCMa', symObjAddr: 0x478, symBinAddr: 0x444C, symSize: 0x24 }
+  - { offsetInCU: 0x1B5, offset: 0x56502, size: 0x8, addend: 0x0, symName: '_$sSa22_allocateUninitializedySayxG_SpyxGtSiFZSS_SSt_Tgmq5', symObjAddr: 0x4D4, symBinAddr: 0x44A8, symSize: 0x98 }
+  - { offsetInCU: 0x1E2, offset: 0x5652F, size: 0x8, addend: 0x0, symName: '_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSS_SSTgmq5', symObjAddr: 0x56C, symBinAddr: 0x4540, symSize: 0x1F0 }
+  - { offsetInCU: 0x247, offset: 0x56594, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x764, symBinAddr: 0x4738, symSize: 0x6C }
+  - { offsetInCU: 0x3C0, offset: 0x5670D, size: 0x8, addend: 0x0, symName: '_$s10GiphyUISDK0A0C9configure6apiKey16verificationMode8metadataySS_SbSDyS2SGtFZfA0_', symObjAddr: 0x118, symBinAddr: 0x40EC, symSize: 0xC }
+  - { offsetInCU: 0x3DC, offset: 0x56729, size: 0x8, addend: 0x0, symName: '_$s10GiphyUISDK0A0C9configure6apiKey16verificationMode8metadataySS_SbSDyS2SGtFZfA1_', symObjAddr: 0x124, symBinAddr: 0x40F8, symSize: 0x1C }
+  - { offsetInCU: 0x470, offset: 0x567BD, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKCACyc33_F27A5A8E0E625AF5E9954BF236947405LlfC', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x38 }
+  - { offsetInCU: 0x484, offset: 0x567D1, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKCACyc33_F27A5A8E0E625AF5E9954BF236947405Llfc', symObjAddr: 0x38, symBinAddr: 0x4038, symSize: 0xB4 }
+  - { offsetInCU: 0x4A8, offset: 0x567F5, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKC6sharedACvgZ', symObjAddr: 0x1C4, symBinAddr: 0x4198, symSize: 0x5C }
+  - { offsetInCU: 0x4D2, offset: 0x5681F, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKC6sharedACvsZ', symObjAddr: 0x220, symBinAddr: 0x41F4, symSize: 0x80 }
+  - { offsetInCU: 0x505, offset: 0x56852, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKC6sharedACvMZ', symObjAddr: 0x2A0, symBinAddr: 0x4274, symSize: 0x4C }
+  - { offsetInCU: 0x529, offset: 0x56876, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKC6sharedACvMZ.resume.0', symObjAddr: 0x2EC, symBinAddr: 0x42C0, symSize: 0x3C }
+  - { offsetInCU: 0x54A, offset: 0x56897, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKC6apiKeySSvg', symObjAddr: 0x328, symBinAddr: 0x42FC, symSize: 0x40 }
+  - { offsetInCU: 0x56E, offset: 0x568BB, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKC9showGiphy2onySo16UIViewControllerC_tF', symObjAddr: 0x368, symBinAddr: 0x433C, symSize: 0x7C }
+  - { offsetInCU: 0x5C5, offset: 0x56912, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKCfd', symObjAddr: 0x3E4, symBinAddr: 0x43B8, symSize: 0x30 }
+  - { offsetInCU: 0x5E9, offset: 0x56936, size: 0x8, addend: 0x0, symName: '_$s17weakLinkingPOCSDK3SDKCfD', symObjAddr: 0x43C, symBinAddr: 0x4410, symSize: 0x3C }
+  - { offsetInCU: 0x629, offset: 0x56976, size: 0x8, addend: 0x0, symName: '_$sSa9_getCountSiyFSS_SSt_Tgq5', symObjAddr: 0x75C, symBinAddr: 0x4730, symSize: 0x8 }
+  - { offsetInCU: 0x63D, offset: 0x5698A, size: 0x8, addend: 0x0, symName: '_$sSa29_hoistableIsNativeTypeCheckedSbyFSS_SSt_Tgq5', symObjAddr: 0x7D0, symBinAddr: 0x47A4, symSize: 0xC }
+  - { offsetInCU: 0x665, offset: 0x569B2, size: 0x8, addend: 0x0, symName: '_$sSa11_getElement_20wasNativeTypeChecked22matchingSubscriptCheckxSi_Sbs16_DependenceTokenVtFSS_SSt_Tgq5', symObjAddr: 0x7DC, symBinAddr: 0x47B0, symSize: 0x9C }
+  - { offsetInCU: 0x6A8, offset: 0x569F5, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tgq5', symObjAddr: 0x878, symBinAddr: 0x484C, symSize: 0x80 }
+  - { offsetInCU: 0x6C9, offset: 0x56A16, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV19_getElementSlowPathyyXlSiFSS_SSt_Tgq5', symObjAddr: 0x8F8, symBinAddr: 0x48CC, symSize: 0x204 }
+  - { offsetInCU: 0x6F2, offset: 0x56A3F, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSS_Tgq5', symObjAddr: 0xAFC, symBinAddr: 0x4AD0, symSize: 0x224 }
+  - { offsetInCU: 0x70C, offset: 0x56A59, size: 0x8, addend: 0x0, symName: '_$sSS12_createEmpty19withInitialCapacitySSSi_tFZ', symObjAddr: 0xD20, symBinAddr: 0x4CF4, symSize: 0x68 }
+...

@@ -1,0 +1,6 @@
+framework module weakLinkingPOCSDK {
+  umbrella header "weakLinkingPOCSDK.h"
+  export *
+
+  module * { export * }
+}

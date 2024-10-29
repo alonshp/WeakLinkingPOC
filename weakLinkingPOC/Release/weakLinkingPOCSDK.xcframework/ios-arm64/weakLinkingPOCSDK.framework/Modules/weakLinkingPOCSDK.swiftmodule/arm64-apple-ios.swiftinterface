@@ -1,0 +1,18 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios17.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name weakLinkingPOCSDK
+import AlonSourcesSDK
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import weakLinkingPOCSDK
+@_hasMissingDesignatedInitializers public class SDK {
+  public static var shared: weakLinkingPOCSDK.SDK
+  public func test()
+  public var monetization: any AlonSourcesSDK.OWMonitization
+  public func ad(params: any AlonSourcesSDK.AdParamsProtocolBridge) -> UIKit.UIView
+  @objc deinit
+}

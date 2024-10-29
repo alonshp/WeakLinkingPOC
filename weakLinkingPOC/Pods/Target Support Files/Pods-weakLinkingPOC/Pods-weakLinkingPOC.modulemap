@@ -1,0 +1,6 @@
+framework module Pods_weakLinkingPOC {
+  umbrella header "Pods-weakLinkingPOC-umbrella.h"
+
+  export *
+  module * { export * }
+}

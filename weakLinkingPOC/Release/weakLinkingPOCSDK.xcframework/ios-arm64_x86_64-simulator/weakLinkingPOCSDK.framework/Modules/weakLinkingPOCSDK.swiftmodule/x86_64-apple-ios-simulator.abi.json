@@ -1,0 +1,290 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "weakLinkingPOCSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "weakLinkingPOCSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AlonSourcesSDK",
+        "printedName": "AlonSourcesSDK",
+        "declKind": "Import",
+        "moduleName": "weakLinkingPOCSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SDK",
+        "printedName": "SDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SDK",
+                "printedName": "weakLinkingPOCSDK.SDK",
+                "usr": "s:17weakLinkingPOCSDK3SDKC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17weakLinkingPOCSDK3SDKC6sharedACvpZ",
+            "mangledName": "$s17weakLinkingPOCSDK3SDKC6sharedACvpZ",
+            "moduleName": "weakLinkingPOCSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDK",
+                    "printedName": "weakLinkingPOCSDK.SDK",
+                    "usr": "s:17weakLinkingPOCSDK3SDKC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17weakLinkingPOCSDK3SDKC6sharedACvgZ",
+                "mangledName": "$s17weakLinkingPOCSDK3SDKC6sharedACvgZ",
+                "moduleName": "weakLinkingPOCSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDK",
+                    "printedName": "weakLinkingPOCSDK.SDK",
+                    "usr": "s:17weakLinkingPOCSDK3SDKC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17weakLinkingPOCSDK3SDKC6sharedACvsZ",
+                "mangledName": "$s17weakLinkingPOCSDK3SDKC6sharedACvsZ",
+                "moduleName": "weakLinkingPOCSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17weakLinkingPOCSDK3SDKC6sharedACvMZ",
+                "mangledName": "$s17weakLinkingPOCSDK3SDKC6sharedACvMZ",
+                "moduleName": "weakLinkingPOCSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "test",
+            "printedName": "test()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17weakLinkingPOCSDK3SDKC4testyyF",
+            "mangledName": "$s17weakLinkingPOCSDK3SDKC4testyyF",
+            "moduleName": "weakLinkingPOCSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "monetization",
+            "printedName": "monetization",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OWMonitization",
+                "printedName": "any AlonSourcesSDK.OWMonitization",
+                "usr": "s:14AlonSourcesSDK14OWMonitizationP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17weakLinkingPOCSDK3SDKC12monetization011AlonSourcesD014OWMonitization_pvp",
+            "mangledName": "$s17weakLinkingPOCSDK3SDKC12monetization011AlonSourcesD014OWMonitization_pvp",
+            "moduleName": "weakLinkingPOCSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OWMonitization",
+                    "printedName": "any AlonSourcesSDK.OWMonitization",
+                    "usr": "s:14AlonSourcesSDK14OWMonitizationP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17weakLinkingPOCSDK3SDKC12monetization011AlonSourcesD014OWMonitization_pvg",
+                "mangledName": "$s17weakLinkingPOCSDK3SDKC12monetization011AlonSourcesD014OWMonitization_pvg",
+                "moduleName": "weakLinkingPOCSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OWMonitization",
+                    "printedName": "any AlonSourcesSDK.OWMonitization",
+                    "usr": "s:14AlonSourcesSDK14OWMonitizationP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17weakLinkingPOCSDK3SDKC12monetization011AlonSourcesD014OWMonitization_pvs",
+                "mangledName": "$s17weakLinkingPOCSDK3SDKC12monetization011AlonSourcesD014OWMonitization_pvs",
+                "moduleName": "weakLinkingPOCSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17weakLinkingPOCSDK3SDKC12monetization011AlonSourcesD014OWMonitization_pvM",
+                "mangledName": "$s17weakLinkingPOCSDK3SDKC12monetization011AlonSourcesD014OWMonitization_pvM",
+                "moduleName": "weakLinkingPOCSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "ad",
+            "printedName": "ad(params:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdParamsProtocolBridge",
+                "printedName": "any AlonSourcesSDK.AdParamsProtocolBridge",
+                "usr": "s:14AlonSourcesSDK22AdParamsProtocolBridgeP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17weakLinkingPOCSDK3SDKC2ad6paramsSo6UIViewC011AlonSourcesD022AdParamsProtocolBridge_p_tF",
+            "mangledName": "$s17weakLinkingPOCSDK3SDKC2ad6paramsSo6UIViewC011AlonSourcesD022AdParamsProtocolBridge_p_tF",
+            "moduleName": "weakLinkingPOCSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17weakLinkingPOCSDK3SDKC",
+        "mangledName": "$s17weakLinkingPOCSDK3SDKC",
+        "moduleName": "weakLinkingPOCSDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

@@ -1,0 +1,321 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptionalFrameworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OptionalSDK",
+        "printedName": "OptionalSDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptionalSDK",
+                "printedName": "OptionalFrameworkSDK.OptionalSDK",
+                "usr": "s:20OptionalFrameworkSDK0aC0C"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20OptionalFrameworkSDK0aC0C6sharedACvpZ",
+            "mangledName": "$s20OptionalFrameworkSDK0aC0C6sharedACvpZ",
+            "moduleName": "OptionalFrameworkSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OptionalSDK",
+                    "printedName": "OptionalFrameworkSDK.OptionalSDK",
+                    "usr": "s:20OptionalFrameworkSDK0aC0C"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OptionalFrameworkSDK0aC0C6sharedACvgZ",
+                "mangledName": "$s20OptionalFrameworkSDK0aC0C6sharedACvgZ",
+                "moduleName": "OptionalFrameworkSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OptionalSDK",
+                    "printedName": "OptionalFrameworkSDK.OptionalSDK",
+                    "usr": "s:20OptionalFrameworkSDK0aC0C"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OptionalFrameworkSDK0aC0C6sharedACvsZ",
+                "mangledName": "$s20OptionalFrameworkSDK0aC0C6sharedACvsZ",
+                "moduleName": "OptionalFrameworkSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OptionalFrameworkSDK0aC0C6sharedACvMZ",
+                "mangledName": "$s20OptionalFrameworkSDK0aC0C6sharedACvMZ",
+                "moduleName": "OptionalFrameworkSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "doOptionalThing",
+            "printedName": "doOptionalThing()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OptionalFrameworkSDK0aC0C02doA5ThingyyF",
+            "mangledName": "$s20OptionalFrameworkSDK0aC0C02doA5ThingyyF",
+            "moduleName": "OptionalFrameworkSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "returnOptionalStruct",
+            "printedName": "returnOptionalStruct()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptionalSDKStruct",
+                "printedName": "OptionalFrameworkSDK.OptionalSDKStruct",
+                "usr": "s:20OptionalFrameworkSDK0A9SDKStructV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OptionalFrameworkSDK0aC0C06returnA6StructAA0A9SDKStructVyF",
+            "mangledName": "$s20OptionalFrameworkSDK0aC0C06returnA6StructAA0A9SDKStructVyF",
+            "moduleName": "OptionalFrameworkSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20OptionalFrameworkSDK0aC0C",
+        "mangledName": "$s20OptionalFrameworkSDK0aC0C",
+        "moduleName": "OptionalFrameworkSDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptionalFrameworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OptionalSDKStruct",
+        "printedName": "OptionalSDKStruct",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "a",
+            "printedName": "a",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20OptionalFrameworkSDK0A9SDKStructV1aSSvp",
+            "mangledName": "$s20OptionalFrameworkSDK0A9SDKStructV1aSSvp",
+            "moduleName": "OptionalFrameworkSDK",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OptionalFrameworkSDK0A9SDKStructV1aSSvg",
+                "mangledName": "$s20OptionalFrameworkSDK0A9SDKStructV1aSSvg",
+                "moduleName": "OptionalFrameworkSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "b",
+            "printedName": "b",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20OptionalFrameworkSDK0A9SDKStructV1bSivp",
+            "mangledName": "$s20OptionalFrameworkSDK0A9SDKStructV1bSivp",
+            "moduleName": "OptionalFrameworkSDK",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OptionalFrameworkSDK0A9SDKStructV1bSivg",
+                "mangledName": "$s20OptionalFrameworkSDK0A9SDKStructV1bSivg",
+                "moduleName": "OptionalFrameworkSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(a:b:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptionalSDKStruct",
+                "printedName": "OptionalFrameworkSDK.OptionalSDKStruct",
+                "usr": "s:20OptionalFrameworkSDK0A9SDKStructV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20OptionalFrameworkSDK0A9SDKStructV1a1bACSS_Sitcfc",
+            "mangledName": "$s20OptionalFrameworkSDK0A9SDKStructV1a1bACSS_Sitcfc",
+            "moduleName": "OptionalFrameworkSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:20OptionalFrameworkSDK0A9SDKStructV",
+        "mangledName": "$s20OptionalFrameworkSDK0A9SDKStructV",
+        "moduleName": "OptionalFrameworkSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

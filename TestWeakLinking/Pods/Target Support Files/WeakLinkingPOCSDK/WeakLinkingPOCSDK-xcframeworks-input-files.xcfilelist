@@ -1,0 +1,2 @@
+${PODS_ROOT}/Target Support Files/WeakLinkingPOCSDK/WeakLinkingPOCSDK-xcframeworks.sh
+${PODS_ROOT}/../../weakLinkingPOC/Release/weakLinkingPOCSDK.xcframework
