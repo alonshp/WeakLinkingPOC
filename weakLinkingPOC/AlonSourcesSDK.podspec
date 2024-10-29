@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author           = 'OpenWeb'
   s.platform        = :ios
   s.homepage         = 'https://bitbucket.org/aniviewteam/spotim-sdk-kmm'
-  s.source           = { :git => "git@bitbucket.org:aniviewteam/spotim-sdk-kmm.git"}
+  s.source           = { :git => "git@github.com:alonshp/WeakLinkingPOC.git"}
   s.ios.deployment_target = '13.0'
 
   s.source_files = "SourcesSDK/**/*"
