@@ -16,6 +16,11 @@
     "git": "git@bitbucket.org:aniviewteam/spotim-sdk-kmm.git"
   },
   "vendored_frameworks": "Release/weakLinkingPOCSDK.xcframework",
+  "dependencies": {
+    "AlonSourcesSDK": [
+
+    ]
+  },
   "pod_target_xcconfig": {
     "FRAMEWORK_SEARCH_PATHS": "$(inherited) ${PODS_CONFIGURATION_BUILD_DIR}/AlonSourcesSDK"
   },

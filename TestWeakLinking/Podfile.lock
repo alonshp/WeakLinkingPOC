@@ -1,26 +1,28 @@
 PODS:
   - AlonSourcesSDK (1.0.0)
   - OptionalFrameworkSDK (1.0.0)
-  - WeakLinkingPOCSDK (1.0.0)
+  - WeakLinkingPOCSDK (1.0.0):
+    - AlonSourcesSDK
 
 DEPENDENCIES:
-  - AlonSourcesSDK (from `../weakLinkingPOC`)
   - OptionalFrameworkSDK (from `../OptionalFramework`)
   - WeakLinkingPOCSDK (from `../weakLinkingPOC`)
 
+SPEC REPOS:
+  trunk:
+    - AlonSourcesSDK
+
 EXTERNAL SOURCES:
-  AlonSourcesSDK:
-    :path: "../weakLinkingPOC"
   OptionalFrameworkSDK:
     :path: "../OptionalFramework"
   WeakLinkingPOCSDK:
     :path: "../weakLinkingPOC"
 
 SPEC CHECKSUMS:
-  AlonSourcesSDK: b8eb0cb9097bff39afc46fa8e3fda2dd0ea84acd
+  AlonSourcesSDK: fdfe6e3e5b344b77d3c456880ff1f25ceeaeaaa6
   OptionalFrameworkSDK: 2f940e5523db93d98f8de180325ff164b5fe4f35
-  WeakLinkingPOCSDK: 1a7bfe017bc8600af20b6d24384b9fa4140681bc
+  WeakLinkingPOCSDK: ab81087d8ea53d8f23c82cf0ce0a753f5eafe4b1
 
-PODFILE CHECKSUM: e4e2e8996ed1e393d1b5ca57b8d082a65073b95b
+PODFILE CHECKSUM: 3072115e3cbe213facef9b4e7b772b5952a545d8
 
 COCOAPODS: 1.14.3

@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 #end
 
 
-#  s.dependency 'SourcesSDK'
+  s.dependency 'AlonSourcesSDK'
 
 s.pod_target_xcconfig = {
   'FRAMEWORK_SEARCH_PATHS' => "$(inherited) ${PODS_CONFIGURATION_BUILD_DIR}/AlonSourcesSDK"

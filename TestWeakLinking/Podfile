@@ -8,7 +8,7 @@ target 'TestWeakLinking' do
 
   # Pods for TestWeakLinking
   pod 'WeakLinkingPOCSDK', :path => '../weakLinkingPOC'
-  pod 'AlonSourcesSDK', :path => '../weakLinkingPOC'
+#  pod 'AlonSourcesSDK'
   pod 'OptionalFrameworkSDK', :path => '../OptionalFramework'
 
 end
