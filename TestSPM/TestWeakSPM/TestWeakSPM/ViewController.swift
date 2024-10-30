@@ -7,7 +7,7 @@
 
 import UIKit
 import weakLinkingPOCSDK
-//import AlonSourcesSDK
+import AlonSourcesSDK
 
 class ViewController: UIViewController {
 
