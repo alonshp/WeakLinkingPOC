@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import weakLinkingPOCSDK
+//import AlonSourcesSDK
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
+        SDK.shared.test()
+//        SourcesClass.test()
+//        OWMonitizationLayer()
     }
 
 

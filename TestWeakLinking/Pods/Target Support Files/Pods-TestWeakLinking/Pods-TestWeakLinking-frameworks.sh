@@ -177,12 +177,10 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AlonSourcesSDK/AlonSourcesSDK.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OptionalFrameworkSDK/OptionalFrameworkSDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/WeakLinkingPOCSDK/weakLinkingPOCSDK.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AlonSourcesSDK/AlonSourcesSDK.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OptionalFrameworkSDK/OptionalFrameworkSDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/WeakLinkingPOCSDK/weakLinkingPOCSDK.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

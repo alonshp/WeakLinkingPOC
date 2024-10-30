@@ -1,4 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-TestWeakLinking/Pods-TestWeakLinking-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AlonSourcesSDK/AlonSourcesSDK.framework
-${PODS_XCFRAMEWORKS_BUILD_DIR}/OptionalFrameworkSDK/OptionalFrameworkSDK.framework/OptionalFrameworkSDK
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/WeakLinkingPOCSDK/weakLinkingPOCSDK.framework/weakLinkingPOCSDK

@@ -13,6 +13,8 @@
 		1680BE422CD24EDC002FAB71 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1680BE412CD24EDC002FAB71 /* Base */; };
 		1680BE442CD24EDD002FAB71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1680BE432CD24EDD002FAB71 /* Assets.xcassets */; };
 		1680BE472CD24EDD002FAB71 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1680BE462CD24EDD002FAB71 /* Base */; };
+		1680BE6A2CD25E87002FAB71 /* AlonSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1680BE692CD25E87002FAB71 /* AlonSDK */; };
+		1680BE6C2CD25E87002FAB71 /* AlonSourcesSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1680BE6B2CD25E87002FAB71 /* AlonSourcesSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1680BE6C2CD25E87002FAB71 /* AlonSourcesSDK in Frameworks */,
+				1680BE6A2CD25E87002FAB71 /* AlonSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = TestWeakSPM;
+			packageProductDependencies = (
+				1680BE692CD25E87002FAB71 /* AlonSDK */,
+				1680BE6B2CD25E87002FAB71 /* AlonSourcesSDK */,
+			);
 			productName = TestWeakSPM;
 			productReference = 1680BE372CD24EDC002FAB71 /* TestWeakSPM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 1680BE2E2CD24EDC002FAB71;
+			packageReferences = (
+				1680BE682CD25E87002FAB71 /* XCRemoteSwiftPackageReference "WeakLinkingPOC" */,
+			);
 			productRefGroup = 1680BE382CD24EDC002FAB71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +374,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1680BE682CD25E87002FAB71 /* XCRemoteSwiftPackageReference "WeakLinkingPOC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alonshp/WeakLinkingPOC";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1680BE692CD25E87002FAB71 /* AlonSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1680BE682CD25E87002FAB71 /* XCRemoteSwiftPackageReference "WeakLinkingPOC" */;
+			productName = AlonSDK;
+		};
+		1680BE6B2CD25E87002FAB71 /* AlonSourcesSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1680BE682CD25E87002FAB71 /* XCRemoteSwiftPackageReference "WeakLinkingPOC" */;
+			productName = AlonSourcesSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1680BE2F2CD24EDC002FAB71 /* Project object */;
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import AlonSourcesSDK
+@_exported import AlonSourcesSDK
 
 public class SDK {
 

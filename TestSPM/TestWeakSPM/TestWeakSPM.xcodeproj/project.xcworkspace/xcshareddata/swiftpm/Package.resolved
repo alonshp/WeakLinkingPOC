@@ -1,0 +1,15 @@
+{
+  "originHash" : "af02f6e92b165ba8fb642b6cbcfdc0a8022c81b90ed58edc6db2f0a16d830f1b",
+  "pins" : [
+    {
+      "identity" : "weaklinkingpoc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alonshp/WeakLinkingPOC",
+      "state" : {
+        "branch" : "main",
+        "revision" : "927235638d27c800cbaee1fbd084ed5fdff5c779"
+      }
+    }
+  ],
+  "version" : 3
+}

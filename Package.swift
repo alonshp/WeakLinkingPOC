@@ -22,7 +22,7 @@ func createTargets() -> [Target] {
 
 		let SourcesTarget: Target = .target(
         name: "AlonSourcesSDK",
-        path: "weakLinkingPOC/SourcesSDK"
+        path: "weakLinkingPOC/AlonSourcesSDK"
     )
     targets.append(SourcesTarget)
 

@@ -27,7 +27,7 @@
 		161933662CAABE61005C517E /* weakLinkingPOCSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C75E172CA426D500D02AF0 /* weakLinkingPOCSDK.framework */; };
 		161933A52CAAE141005C517E /* SourcesSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 161933A42CAAE141005C517E /* SourcesSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		161933AF2CAAE150005C517E /* SourcesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161933AE2CAAE150005C517E /* SourcesClass.swift */; };
-		161933B22CAAE882005C517E /* AlonSourcesSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161933A22CAAE141005C517E /* AlonSourcesSDK.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		161933B22CAAE882005C517E /* AlonSourcesSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161933A22CAAE141005C517E /* AlonSourcesSDK.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		161933B72CAAF26F005C517E /* AlonSourcesSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161933A22CAAE141005C517E /* AlonSourcesSDK.framework */; };
 		16C75DFE2CA4269A00D02AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C75DFD2CA4269A00D02AF0 /* AppDelegate.swift */; };
 		16C75E002CA4269A00D02AF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C75DFF2CA4269A00D02AF0 /* SceneDelegate.swift */; };
@@ -125,7 +125,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		161933A32CAAE141005C517E /* SourcesSDK */ = {
+		161933A32CAAE141005C517E /* AlonSourcesSDK */ = {
 			isa = PBXGroup;
 			children = (
 				161933B12CAAE192005C517E /* AlonSourcesSDK.podspec */,
@@ -133,7 +133,7 @@
 				161933AE2CAAE150005C517E /* SourcesClass.swift */,
 				16047EC72CB67A250086E606 /* AdParamsBridge.swift */,
 			);
-			path = SourcesSDK;
+			path = AlonSourcesSDK;
 			sourceTree = "<group>";
 		};
 		16C75DF12CA4269A00D02AF0 = {
@@ -143,7 +143,7 @@
 				1619335F2CA4544B005C517E /* weakLinkingPOCSDK.xcframework */,
 				16C75DFC2CA4269A00D02AF0 /* weakLinkingPOC */,
 				16C75E182CA426D500D02AF0 /* weakLinkingPOCSDK */,
-				161933A32CAAE141005C517E /* SourcesSDK */,
+				161933A32CAAE141005C517E /* AlonSourcesSDK */,
 				16C75DFB2CA4269A00D02AF0 /* Products */,
 				DB2B9C579B10D88DDCFAF3F2 /* Pods */,
 				7DD56D82DBEE6F2B54A776C9 /* Frameworks */,

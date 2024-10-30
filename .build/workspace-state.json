@@ -1,0 +1,24 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "weak-linking-poc",
+          "kind" : "root",
+          "location" : "/Users/alonshprung/Work/OpenWeb/weak-linking-poc",
+          "name" : "weak-linking-poc"
+        },
+        "path" : "/Users/alonshprung/Work/OpenWeb/weak-linking-poc/weakLinkingPOC/Release/weakLinkingPOCSDK.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "AlonSDK"
+      }
+    ],
+    "dependencies" : [
+
+    ]
+  },
+  "version" : 6
+}
