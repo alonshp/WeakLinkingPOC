@@ -3,8 +3,8 @@ import PackageDescription
 
 func createProducts() -> [Product] {
     let products: [Product] = [
-			.library(name: "AlonSDK", targets: [SDKWrapperTarget]),
-			.library(name: "AlonSourcesSDK", targets: [SDKWrapperTarget])
+			.library(name: "AlonSDK", targets: ["SDKWrapperTarget"]),
+			.library(name: "AlonSourcesSDK", targets: ["SDKWrapperTarget"])
 		]
 
     return products
