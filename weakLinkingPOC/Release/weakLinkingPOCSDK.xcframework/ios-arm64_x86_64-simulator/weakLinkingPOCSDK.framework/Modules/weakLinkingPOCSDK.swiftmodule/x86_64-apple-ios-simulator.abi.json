@@ -26,7 +26,10 @@
         "name": "AlonSourcesSDK",
         "printedName": "AlonSourcesSDK",
         "declKind": "Import",
-        "moduleName": "weakLinkingPOCSDK"
+        "moduleName": "weakLinkingPOCSDK",
+        "declAttributes": [
+          "Exported"
+        ]
       },
       {
         "kind": "TypeDecl",

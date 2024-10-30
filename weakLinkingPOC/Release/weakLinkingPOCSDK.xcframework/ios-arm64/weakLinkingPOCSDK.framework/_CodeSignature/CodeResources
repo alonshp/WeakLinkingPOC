@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/weakLinkingPOCSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Nqx+lleDpl6fpxRtNFsc6AQA7Ik=
+		muVV+pExpdjd0igDSEMFSezV+NI=
 		</data>
 		<key>Modules/weakLinkingPOCSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		NRN3Ekmr5F3KXtzC9I4DZXtEjQU=
+		EdRqIGOz+Fx0Hbtum/+V2sUDZA0=
 		</data>
 		<key>Modules/weakLinkingPOCSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/weakLinkingPOCSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		NRN3Ekmr5F3KXtzC9I4DZXtEjQU=
+		EdRqIGOz+Fx0Hbtum/+V2sUDZA0=
 		</data>
 		<key>Modules/weakLinkingPOCSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		tl5VRDE0m34kaUW+U3EaMiRxQhw=
+		k2Vn1XHxxz3BP2ytu7twMvmIBi8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -57,14 +57,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ru97rT1mmzyxxmddtbaaD+n/jyYJyC1n7TCIoy6iphM=
+			+9YMKtVmU5MR1LmL86If7sKhR1VVpYDAYz7JgsZvJes=
 			</data>
 		</dict>
 		<key>Modules/weakLinkingPOCSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bdu9b5hTAw1vYduKtV+VZWI40GZr8bOKUuCFBuhjG3k=
+			VHcJYdo1g9kNXd/S06oNTse3j7Gb3O8mW1vVOIPjMU4=
 			</data>
 		</dict>
 		<key>Modules/weakLinkingPOCSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -78,14 +78,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bdu9b5hTAw1vYduKtV+VZWI40GZr8bOKUuCFBuhjG3k=
+			VHcJYdo1g9kNXd/S06oNTse3j7Gb3O8mW1vVOIPjMU4=
 			</data>
 		</dict>
 		<key>Modules/weakLinkingPOCSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HgWvA6pdvqocEWjtxjtZK7jzH3vkRaXn2CXwK78d8K4=
+			sSh6Km1wM85TJ6SD+piVyQkz6MnV+nO5os5dwYa3ndI=
 			</data>
 		</dict>
 	</dict>
