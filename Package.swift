@@ -28,12 +28,12 @@ func createTargets() -> [Target] {
 
 		// Adding a "wrapper" target which all xcframeworks are "dependencies" to this one
     let wrapperTarget: Target = .target(
-        name: SDKWrapperTarget,
+        name: "SDKWrapperTarget",
         dependencies: [
             .target(name: "AlonSDK", condition: .when(platforms: .some([.iOS]))),
 						.target(name: "AlonSourcesSDK", condition: .when(platforms: .some([.iOS])))
         ],
-        path: SDKWrapperTarget
+        path: "SDKWrapperTarget"
     )
     targets.append(wrapperTarget)
 
