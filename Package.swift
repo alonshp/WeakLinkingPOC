@@ -20,24 +20,18 @@ func createTargets() -> [Target] {
     )
     targets.append(MainSDK)
 
-		let SourcesTarget: Target = .target(
-        name: "AlonSourcesSDK",
-        path: "weakLinkingPOC/AlonSourcesSDK"
-    )
-    targets.append(SourcesTarget)
-
-		// Adding a "wrapper" target which all xcframeworks are "dependencies" to this one
+// Adding a "wrapper" target which all xcframeworks are "dependencies" to this one
     let wrapperTarget: Target = .target(
         name: "SDKWrapperTarget",
         dependencies: [
             .target(name: "AlonSDK", condition: .when(platforms: .some([.iOS]))),
-						.target(name: "AlonSourcesSDK", condition: .when(platforms: .some([.iOS])))
+		.package(url: "https://github.com/alonshp/AlonSourcesSDK.git", .branch("main"))
         ],
         path: "SDKWrapperTarget"
     )
     targets.append(wrapperTarget)
 
-		return targets
+	return targets
 }
 
 let products = createProducts()
