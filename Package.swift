@@ -4,7 +4,7 @@ import PackageDescription
 func createProducts() -> [Product] {
     let products: [Product] = [
 			.library(name: "AlonSDK", targets: ["SDKWrapperTarget"]),
-			.library(name: "AlonSourcesSDK", type: .dynamic, targets: ["SDKWrapperTarget"])
+			.library(name: "AlonSourcesSDK", type: .dynamic, targets: ["AlonSourcesSDK"])
 		]
 
     return products
@@ -31,7 +31,7 @@ let SourcesTarget: Target = .target(
         name: "SDKWrapperTarget",
         dependencies: [
             .target(name: "AlonSDK", condition: .when(platforms: .some([.iOS]))),
-	.target(name: "AlonSourcesSDK", condition: .when(platforms: .some([.iOS]))),
+	//.target(name: "AlonSourcesSDK", condition: .when(platforms: .some([.iOS]))),
         ],
         path: "SDKWrapperTarget"
 	//     linkerSettings: [
