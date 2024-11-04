@@ -16,10 +16,7 @@ func createTargets() -> [Target] {
     // Adding MainSDK xcframework
     let MainSDK: Target = .binaryTarget(
         name: "AlonSDK",
-        path: "weakLinkingPOC/Release/weakLinkingPOCSDK.xcframework",
-	linkerSettings: [
-        	.linkedFramework("AlonSourcesSDK")
-	]
+        path: "weakLinkingPOC/Release/weakLinkingPOCSDK.xcframework"
     )
     targets.append(MainSDK)
 
@@ -36,7 +33,10 @@ let SourcesTarget: Target = .target(
             .target(name: "AlonSDK", condition: .when(platforms: .some([.iOS]))),
 	.target(name: "AlonSourcesSDK", condition: .when(platforms: .some([.iOS]))),
         ],
-        path: "SDKWrapperTarget"
+        path: "SDKWrapperTarget",
+	    linkerSettings: [
+        	.linkedFramework("AlonSourcesSDK")
+	]
     )
     targets.append(wrapperTarget)
 
