@@ -43,9 +43,9 @@ let package = Package(
         .iOS(.v12)
     ],
     products: products,
-    targets: targets,
 	dependencies: [
         // Declare the AlonSourcesSDK package dependency here
         .package(url: "https://github.com/alonshp/AlonSourcesSDK.git", .branch("main"))
     ],
+    targets: targets,
 )
