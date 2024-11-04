@@ -47,5 +47,5 @@ let package = Package(
         // Declare the AlonSourcesSDK package dependency here
         .package(url: "https://github.com/alonshp/AlonSourcesSDK.git", .branch("main"))
     ],
-    targets: targets,
+    targets: targets
 )
