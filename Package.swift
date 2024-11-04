@@ -33,10 +33,10 @@ let SourcesTarget: Target = .target(
             .target(name: "AlonSDK", condition: .when(platforms: .some([.iOS]))),
 	.target(name: "AlonSourcesSDK", condition: .when(platforms: .some([.iOS]))),
         ],
-        path: "SDKWrapperTarget",
-	    linkerSettings: [
-        	.linkedFramework("AlonSourcesSDK")
-	]
+        path: "SDKWrapperTarget"
+	//     linkerSettings: [
+ //        	.linkedFramework("AlonSourcesSDK")
+	// ]
     )
     targets.append(wrapperTarget)
 
