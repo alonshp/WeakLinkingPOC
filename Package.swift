@@ -25,7 +25,7 @@ func createTargets() -> [Target] {
         name: "SDKWrapperTarget",
         dependencies: [
             .target(name: "AlonSDK", condition: .when(platforms: .some([.iOS]))),
-		.package(url: "https://github.com/alonshp/AlonSourcesSDK.git", .branch("main"))
+		.product(name: "AlonSourcesSDK", package: "AlonSourcesSDK")
         ],
         path: "SDKWrapperTarget"
     )
@@ -43,5 +43,9 @@ let package = Package(
         .iOS(.v12)
     ],
     products: products,
-    targets: targets
+    targets: targets,
+	dependencies: [
+        // Declare the AlonSourcesSDK package dependency here
+        .package(url: "https://github.com/alonshp/AlonSourcesSDK.git", .branch("main"))
+    ],
 )
