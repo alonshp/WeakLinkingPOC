@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/NimbusSDK/NimbusSDK-xcframeworks.sh
+${PODS_ROOT}/NimbusSDK/NimbusCoreKit.xcframework
+${PODS_ROOT}/NimbusSDK/NimbusKit.xcframework
+${PODS_ROOT}/NimbusSDK/NimbusMobileFuseKit.xcframework
+${PODS_ROOT}/NimbusSDK/NimbusRenderKit.xcframework
+${PODS_ROOT}/NimbusSDK/OMSDK_Adsbynimbus.xcframework
+${PODS_ROOT}/NimbusSDK/NimbusRenderStaticKit.xcframework
+${PODS_ROOT}/NimbusSDK/NimbusRenderVideoKit.xcframework
+${PODS_ROOT}/NimbusSDK/NimbusRequestKit.xcframework

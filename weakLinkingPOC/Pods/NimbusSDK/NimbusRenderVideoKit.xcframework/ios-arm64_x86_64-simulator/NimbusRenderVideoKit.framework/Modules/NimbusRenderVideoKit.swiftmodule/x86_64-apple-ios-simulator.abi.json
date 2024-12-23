@@ -1,0 +1,701 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "NimbusRenderKit",
+        "printedName": "NimbusRenderKit",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit"
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusRenderKit",
+        "printedName": "NimbusRenderKit",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit"
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusRenderKit",
+        "printedName": "NimbusRenderKit",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NimbusVideoSettingsProvider",
+        "printedName": "NimbusVideoSettingsProvider",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusVideoSettingsProvider",
+                "printedName": "NimbusRenderVideoKit.NimbusVideoSettingsProvider",
+                "usr": "s:20NimbusRenderVideoKit0aC16SettingsProviderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20NimbusRenderVideoKit0aC16SettingsProviderCACycfc",
+            "mangledName": "$s20NimbusRenderVideoKit0aC16SettingsProviderCACycfc",
+            "moduleName": "NimbusRenderVideoKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "adsLoader",
+            "printedName": "adsLoader()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsLoader",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsLoader",
+                "usr": "c:objc(cs)IMAAdsLoader"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20NimbusRenderVideoKit0aC16SettingsProviderC9adsLoaderSo06IMAAdsH0CyF",
+            "mangledName": "$s20NimbusRenderVideoKit0aC16SettingsProviderC9adsLoaderSo06IMAAdsH0CyF",
+            "moduleName": "NimbusRenderVideoKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adsRenderingSettings",
+            "printedName": "adsRenderingSettings()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsRenderingSettings",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsRenderingSettings",
+                "usr": "c:objc(cs)IMAAdsRenderingSettings"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20NimbusRenderVideoKit0aC16SettingsProviderC012adsRenderingE0So06IMAAdshE0CyF",
+            "mangledName": "$s20NimbusRenderVideoKit0aC16SettingsProviderC012adsRenderingE0So06IMAAdshE0CyF",
+            "moduleName": "NimbusRenderVideoKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20NimbusRenderVideoKit0aC16SettingsProviderC",
+        "mangledName": "$s20NimbusRenderVideoKit0aC16SettingsProviderC",
+        "moduleName": "NimbusRenderVideoKit",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusRenderKit",
+        "printedName": "NimbusRenderKit",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NimbusVideoAdRenderer",
+        "printedName": "NimbusVideoAdRenderer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "videoAdSettingsProvider",
+            "printedName": "videoAdSettingsProvider",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusVideoSettingsProvider",
+                "printedName": "NimbusRenderVideoKit.NimbusVideoSettingsProvider",
+                "usr": "s:20NimbusRenderVideoKit0aC16SettingsProviderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20NimbusRenderVideoKit0aC10AdRendererC05videoE16SettingsProviderAA0achI0Cvp",
+            "mangledName": "$s20NimbusRenderVideoKit0aC10AdRendererC05videoE16SettingsProviderAA0achI0Cvp",
+            "moduleName": "NimbusRenderVideoKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusVideoSettingsProvider",
+                    "printedName": "NimbusRenderVideoKit.NimbusVideoSettingsProvider",
+                    "usr": "s:20NimbusRenderVideoKit0aC16SettingsProviderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20NimbusRenderVideoKit0aC10AdRendererC05videoE16SettingsProviderAA0achI0Cvg",
+                "mangledName": "$s20NimbusRenderVideoKit0aC10AdRendererC05videoE16SettingsProviderAA0achI0Cvg",
+                "moduleName": "NimbusRenderVideoKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusVideoSettingsProvider",
+                    "printedName": "NimbusRenderVideoKit.NimbusVideoSettingsProvider",
+                    "usr": "s:20NimbusRenderVideoKit0aC16SettingsProviderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20NimbusRenderVideoKit0aC10AdRendererC05videoE16SettingsProviderAA0achI0Cvs",
+                "mangledName": "$s20NimbusRenderVideoKit0aC10AdRendererC05videoE16SettingsProviderAA0achI0Cvs",
+                "moduleName": "NimbusRenderVideoKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20NimbusRenderVideoKit0aC10AdRendererC05videoE16SettingsProviderAA0achI0CvM",
+                "mangledName": "$s20NimbusRenderVideoKit0aC10AdRendererC05videoE16SettingsProviderAA0achI0CvM",
+                "moduleName": "NimbusRenderVideoKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showMuteButton",
+            "printedName": "showMuteButton",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20NimbusRenderVideoKit0aC10AdRendererC14showMuteButtonSbvp",
+            "mangledName": "$s20NimbusRenderVideoKit0aC10AdRendererC14showMuteButtonSbvp",
+            "moduleName": "NimbusRenderVideoKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20NimbusRenderVideoKit0aC10AdRendererC14showMuteButtonSbvg",
+                "mangledName": "$s20NimbusRenderVideoKit0aC10AdRendererC14showMuteButtonSbvg",
+                "moduleName": "NimbusRenderVideoKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20NimbusRenderVideoKit0aC10AdRendererC14showMuteButtonSbvs",
+                "mangledName": "$s20NimbusRenderVideoKit0aC10AdRendererC14showMuteButtonSbvs",
+                "moduleName": "NimbusRenderVideoKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20NimbusRenderVideoKit0aC10AdRendererC14showMuteButtonSbvM",
+                "mangledName": "$s20NimbusRenderVideoKit0aC10AdRendererC14showMuteButtonSbvM",
+                "moduleName": "NimbusRenderVideoKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusVideoAdRenderer",
+                "printedName": "NimbusRenderVideoKit.NimbusVideoAdRenderer",
+                "usr": "s:20NimbusRenderVideoKit0aC10AdRendererC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20NimbusRenderVideoKit0aC10AdRendererCACycfc",
+            "mangledName": "$s20NimbusRenderVideoKit0aC10AdRendererCACycfc",
+            "moduleName": "NimbusRenderVideoKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "render",
+            "printedName": "render(ad:companionAd:container:adPresentingViewController:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdController",
+                "printedName": "any NimbusCoreKit.AdController",
+                "usr": "s:13NimbusCoreKit12AdControllerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAd",
+                "printedName": "NimbusCoreKit.NimbusAd",
+                "usr": "s:13NimbusCoreKit0A2AdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NimbusCoreKit.NimbusCompanionAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusCompanionAd",
+                    "printedName": "NimbusCoreKit.NimbusCompanionAd",
+                    "usr": "s:13NimbusCoreKit0A11CompanionAdV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdControllerDelegate",
+                "printedName": "any NimbusCoreKit.AdControllerDelegate",
+                "usr": "s:13NimbusCoreKit20AdControllerDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20NimbusRenderVideoKit0aC10AdRendererC6render2ad09companionE09container0H24PresentingViewController8delegate0a4CoreD00eM0_pAJ0aE0V_AJ0a9CompanionE0VSgSo6UIViewCSo0qM0CSgAJ0eM8Delegate_ptF",
+            "mangledName": "$s20NimbusRenderVideoKit0aC10AdRendererC6render2ad09companionE09container0H24PresentingViewController8delegate0a4CoreD00eM0_pAJ0aE0V_AJ0a9CompanionE0VSgSo6UIViewCSo0qM0CSgAJ0eM8Delegate_ptF",
+            "moduleName": "NimbusRenderVideoKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "renderBlocking",
+            "printedName": "renderBlocking(ad:companionAd:adPresentingViewController:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdController",
+                "printedName": "any NimbusCoreKit.AdController",
+                "usr": "s:13NimbusCoreKit12AdControllerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAd",
+                "printedName": "NimbusCoreKit.NimbusAd",
+                "usr": "s:13NimbusCoreKit0A2AdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NimbusCoreKit.NimbusCompanionAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusCompanionAd",
+                    "printedName": "NimbusCoreKit.NimbusCompanionAd",
+                    "usr": "s:13NimbusCoreKit0A11CompanionAdV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdControllerDelegate",
+                "printedName": "any NimbusCoreKit.AdControllerDelegate",
+                "usr": "s:13NimbusCoreKit20AdControllerDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20NimbusRenderVideoKit0aC10AdRendererC14renderBlocking2ad09companionE00I24PresentingViewController8delegate0a4CoreD00eM0_pAI0aE0V_AI0a9CompanionE0VSgSo06UIViewM0CAI0eM8Delegate_ptF",
+            "mangledName": "$s20NimbusRenderVideoKit0aC10AdRendererC14renderBlocking2ad09companionE00I24PresentingViewController8delegate0a4CoreD00eM0_pAI0aE0V_AI0a9CompanionE0VSgSo06UIViewM0CAI0eM8Delegate_ptF",
+            "moduleName": "NimbusRenderVideoKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20NimbusRenderVideoKit0aC10AdRendererC",
+        "mangledName": "$s20NimbusRenderVideoKit0aC10AdRendererC",
+        "moduleName": "NimbusRenderVideoKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AdRenderer",
+            "printedName": "AdRenderer",
+            "usr": "s:13NimbusCoreKit10AdRendererP",
+            "mangledName": "$s13NimbusCoreKit10AdRendererP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "NimbusRenderVideoKit"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/Controller\/NimbusVideoAdController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 455,
+      "length": 2,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/Controller\/NimbusVideoAdController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 868,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/Controller\/NimbusVideoAdController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1055,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/Controller\/NimbusVideoAdController.swift",
+      "kind": "StringLiteral",
+      "offset": 1545,
+      "length": 778,
+      "value": "\"var targetNode = document.getElementsByClassName('videoAdUiLearnMore')[0];\nif (targetNode) {\n\/\/--- Simulate a natural mouse-click sequence.\ntriggerMouseEvent (targetNode, \"touchstart\");\ntriggerMouseEvent (targetNode, \"touchmove\");\ntriggerMouseEvent (targetNode, \"mouseover\");\ntriggerMouseEvent (targetNode, \"mousedown\");\ntriggerMouseEvent (targetNode, \"mouseup\");\ntriggerMouseEvent (targetNode, \"click\");\ntriggerMouseEvent (targetNode, \"touchend\");\n}\n\nfunction triggerMouseEvent (node, eventType) {\nvar clickEvent = document.createEvent ('MouseEvents');\nclickEvent.initEvent (eventType, true, true);\nnode.dispatchEvent (clickEvent);\n}\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/Controller\/NimbusVideoAdController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2879,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/Controller\/NimbusVideoAdController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2987,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/Controller\/NimbusVideoAdController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3463,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/Controller\/NimbusVideoAdController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3552,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/Controller\/NimbusVideoAdController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3954,
+      "length": 2,
+      "value": "46"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/Controller\/NimbusVideoAdController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4060,
+      "length": 3,
+      "value": "-20"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/Controller\/NimbusVideoAdController.swift",
+      "kind": "StringLiteral",
+      "offset": 299,
+      "length": 23,
+      "value": "\"NimbusRenderVideoKit.NimbusVideoAdController\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/Muting\/MuteButton.swift",
+      "kind": "StringLiteral",
+      "offset": 183,
+      "length": 10,
+      "value": "\"NimbusRenderVideoKit.MuteButton\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusRenderVideoKit\/Rendering\/NimbusVideoAdRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 602,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/.build\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NimbusSDK\/IntermediateBuildFilesPath\/Nimbus.build\/Release-iphonesimulator\/NimbusRenderVideoKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 723,
+      "length": 7,
+      "value": "\"Muted\""
+    },
+    {
+      "filePath": "\/Users\/runner\/.build\/Build\/Intermediates.noindex\/ArchiveIntermediates\/NimbusSDK\/IntermediateBuildFilesPath\/Nimbus.build\/Release-iphonesimulator\/NimbusRenderVideoKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 854,
+      "length": 9,
+      "value": "\"Unmuted\""
+    }
+  ]
+}

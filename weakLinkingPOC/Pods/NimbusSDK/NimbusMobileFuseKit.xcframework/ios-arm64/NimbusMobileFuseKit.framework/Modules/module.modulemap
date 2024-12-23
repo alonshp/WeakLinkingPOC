@@ -1,0 +1,11 @@
+framework module NimbusMobileFuseKit {
+  umbrella header "NimbusMobileFuseKit.h"
+  export *
+
+  module * { export * }
+}
+
+module NimbusMobileFuseKit.Swift {
+  header "NimbusMobileFuseKit-Swift.h"
+  requires objc
+}

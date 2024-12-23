@@ -1,0 +1,29 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NimbusRenderVideoKit
+import DeveloperToolsSupport
+import Foundation
+import GoogleInteractiveMediaAds
+@_exported import NimbusRenderKit
+@_exported import NimbusRenderVideoKit
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+open class NimbusVideoSettingsProvider {
+  public init()
+  open func adsLoader() -> GoogleInteractiveMediaAds.IMAAdsLoader
+  open func adsRenderingSettings() -> GoogleInteractiveMediaAds.IMAAdsRenderingSettings
+  @objc deinit
+}
+final public class NimbusVideoAdRenderer : NimbusCoreKit.AdRenderer {
+  final public var videoAdSettingsProvider: NimbusRenderVideoKit.NimbusVideoSettingsProvider
+  final public var showMuteButton: Swift.Bool
+  public init()
+  final public func render(ad: NimbusCoreKit.NimbusAd, companionAd: NimbusCoreKit.NimbusCompanionAd?, container: UIKit.UIView, adPresentingViewController: UIKit.UIViewController?, delegate: any NimbusCoreKit.AdControllerDelegate) -> any NimbusCoreKit.AdController
+  final public func renderBlocking(ad: NimbusCoreKit.NimbusAd, companionAd: NimbusCoreKit.NimbusCompanionAd?, adPresentingViewController: UIKit.UIViewController, delegate: any NimbusCoreKit.AdControllerDelegate) -> any NimbusCoreKit.AdController
+  @objc deinit
+}

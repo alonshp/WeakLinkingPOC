@@ -10,8 +10,11 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://bitbucket.org/aniviewteam/spotim-sdk-kmm'
   s.source           = { :git => "git@bitbucket.org:aniviewteam/spotim-sdk-kmm.git"}
   s.ios.deployment_target = '13.0'
+  s.module_name = "weakLinkingPOCSDK"
 
-  s.vendored_frameworks = "Release/weakLinkingPOCSDK.xcframework"
+  s.source_files = "weakLinkingPOCSDK/**/*"
+
+#  s.vendored_frameworks = "Release/weakLinkingPOCSDK.xcframework"
 
 #s.subspec 'Core' do |ss|
 #  ss.vendored_frameworks = "Release/weakLinkingPOCSDK.xcframework"
@@ -28,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'AlonSourcesSDK'
 
-s.pod_target_xcconfig = {
-  'FRAMEWORK_SEARCH_PATHS' => "$(inherited) ${PODS_CONFIGURATION_BUILD_DIR}/AlonSourcesSDK"
-}
+#s.pod_target_xcconfig = {
+#  'FRAMEWORK_SEARCH_PATHS' => "$(inherited) ${PODS_CONFIGURATION_BUILD_DIR}/AlonSourcesSDK"
+#}
 end

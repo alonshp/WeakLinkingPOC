@@ -1,0 +1,774 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NimbusRequestKit
+import AdSupport
+import AppTrackingTransparency
+import CoreTelephony
+import Foundation
+@_exported import NimbusCoreKit
+@_exported import NimbusRequestKit
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+import zlib
+public enum NimbusCreativeAttribute : Swift.Int, Swift.Codable {
+  case audioAdAutoPlay
+  case audioAdUserInitiated
+  case expandableAutomatic
+  case expandableUserInitiatedClick
+  case expandableUserInitiatedRollover
+  case inBannerVideoAdAutoPlay
+  case inBannerVideoAdUserInitiated
+  case hasPopup
+  case provocativeOrSuggestiveImagery
+  case shakyFlashingFlickeringExtremeAnimationSmileys
+  case surveys
+  case textOnly
+  case userInteractive
+  case windowsDialogOrAlertStyle
+  case hasAudioOnOffButton
+  case adProvidesSkipButton
+  case adobeFlash
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol NimbusRequestExtensible {
+  var extensions: [Swift.String : NimbusRequestKit.NimbusCodable]? { get set }
+}
+public enum NimbusContentDeliveryMethod : Swift.Int, Swift.Codable {
+  case streaming
+  case progressive
+  case download
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct Native : Swift.Codable, Swift.Equatable {
+  public enum Context : Swift.Int, Swift.Codable, Swift.Equatable {
+    case content
+    case social
+    case product
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum ContextSubType : Swift.Int, Swift.Codable, Swift.Equatable {
+    case generalOrMixed
+    case article
+    case video
+    case audio
+    case image
+    case userGenerated
+    case social
+    case email
+    case chat
+    case sales
+    case appStore
+    case productReviews
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum PlacementType : Swift.Int, Swift.Codable, Swift.Equatable {
+    case inFeed
+    case inContent
+    case outsideContent
+    case recommendationWidget
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public static func == (a: NimbusRequestKit.Native, b: NimbusRequestKit.Native) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol NimbusAuctionResultNotifierType {
+  func notifyWin(ad: NimbusCoreKit.NimbusAd, auctionData: NimbusRequestKit.NimbusAuctionData?)
+  func notifyLoss(ad: NimbusCoreKit.NimbusAd, auctionData: NimbusRequestKit.NimbusAuctionData?)
+}
+public enum NimbusPosition : Swift.Int, Swift.Codable {
+  case unknown
+  case aboveTheFold
+  @available(*, deprecated, message: "This has been deprecated. It's recommended to use a different position")
+  case maybeVisibleDependingOnScreen
+  case belowTheFold
+  case header
+  case footer
+  case sidebar
+  case fullScreen
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol NimbusRequestManagerDelegate : AnyObject {
+  func didCompleteNimbusRequest(request: NimbusRequestKit.NimbusRequest, ad: NimbusCoreKit.NimbusAd)
+  func didFailNimbusRequest(request: NimbusRequestKit.NimbusRequest, error: any NimbusCoreKit.NimbusError)
+}
+public struct NimbusCodable : Swift.Codable {
+  public let value: Any
+  public init<T>(_ value: T)
+}
+extension NimbusRequestKit.NimbusCodable : NimbusRequestKit._AnyEncodable, NimbusRequestKit._AnyDecodable {
+}
+extension NimbusRequestKit.NimbusCodable : Swift.Equatable {
+  public static func == (lhs: NimbusRequestKit.NimbusCodable, rhs: NimbusRequestKit.NimbusCodable) -> Swift.Bool
+}
+extension NimbusRequestKit.NimbusCodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension NimbusRequestKit.NimbusCodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension NimbusRequestKit.NimbusCodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension NimbusRequestKit.NimbusCodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension NimbusRequestKit.NimbusCodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension NimbusRequestKit.NimbusCodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension NimbusRequestKit.NimbusCodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension NimbusRequestKit.NimbusCodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+public struct NimbusRegs : Swift.Codable, Swift.Equatable, NimbusRequestKit.NimbusRequestExtensible {
+  public var coppa: Swift.Bool?
+  public var extensions: [Swift.String : NimbusRequestKit.NimbusCodable]?
+  public init(coppa: Swift.Bool? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public mutating func configureGdprConsent(didConsent: Swift.Bool)
+  public mutating func configureGppConsent(consentString: Swift.String, sectionId: Swift.String)
+  public mutating func configureCCPA(privacyString: Swift.String)
+  public static func == (a: NimbusRequestKit.NimbusRegs, b: NimbusRequestKit.NimbusRegs) -> Swift.Bool
+}
+@objc @_hasMissingDesignatedInitializers public class NimbusRequestManager : ObjectiveC.NSObject, NimbusRequestKit.RequestManager {
+  @inlinable public static var sessionId: Swift.String {
+    get { Nimbus.shared.sessionId }
+    set { Nimbus.shared.sessionId = newValue }
+  }
+  public static var app: NimbusRequestKit.NimbusApp?
+  public static var user: NimbusRequestKit.NimbusUser?
+  public static var blocklistBuyers: Swift.Set<Swift.String>?
+  public static var blockedAdvertisingDomains: Swift.Set<Foundation.URL>?
+  public static var blockedApps: Swift.Set<Swift.String>?
+  public static var requestInterceptors: [any NimbusRequestKit.NimbusRequestInterceptor]?
+  public static var source: NimbusRequestKit.NimbusSource?
+  public static var requestUrl: Foundation.URL?
+  public static var additionalRequestHeaders: [Swift.String : Swift.String]?
+  public static var auctionTimeout: Swift.Int?
+  weak public var delegate: (any NimbusRequestKit.NimbusRequestManagerDelegate)?
+  public static var extendedIds: Swift.Set<NimbusRequestKit.NimbusExtendedId>?
+  public init(publisher: Swift.String? = Nimbus.shared.publisher, apiKey: Swift.String? = Nimbus.shared.apiKey)
+  public func performRequest(request: NimbusRequestKit.NimbusRequest)
+  public func cancelRequest(position: Swift.String)
+  public func notifyWin(ad: NimbusCoreKit.NimbusAd, auctionData: NimbusRequestKit.NimbusAuctionData?)
+  public func notifyLoss(ad: NimbusCoreKit.NimbusAd, auctionData: NimbusRequestKit.NimbusAuctionData?)
+  @objc deinit
+}
+public struct NimbusVideo : Swift.Codable, Swift.Equatable, NimbusRequestKit.NimbusRequestExtensible {
+  public var bidFloor: Swift.Float?
+  public var companionAds: [NimbusRequestKit.NimbusBanner]?
+  public var mimes: Swift.Set<Swift.String>?
+  public var minDuration: Swift.Int?
+  public var maxDuration: Swift.Int?
+  public var protocols: Swift.Set<NimbusRequestKit.NimbusVideoProtocol>?
+  public var width: Swift.Int
+  public var height: Swift.Int
+  public var startDelay: Swift.Int?
+  public var placementType: NimbusRequestKit.NimbusVideoPlacementType?
+  public var linearity: NimbusRequestKit.NimbusVideoLinearity?
+  public var playbackMethods: Swift.Set<NimbusRequestKit.NimbusVideoPlaybackMethod>?
+  public var canSkip: Swift.Bool?
+  public var deliveryMethods: Swift.Set<NimbusRequestKit.NimbusContentDeliveryMethod>?
+  public var position: NimbusRequestKit.NimbusPosition?
+  public var supportedApis: Swift.Set<NimbusRequestKit.NimbusApi>?
+  public var minBitrate: Swift.Int?
+  public var maxBitrate: Swift.Int?
+  public var extensions: [Swift.String : NimbusRequestKit.NimbusCodable]?
+  public init(bidFloor: Swift.Float? = nil, companionAds: [NimbusRequestKit.NimbusBanner]? = nil, mimes: Swift.Set<Swift.String>? = nil, minDuration: Swift.Int? = nil, maxDuration: Swift.Int? = nil, protocols: Swift.Set<NimbusRequestKit.NimbusVideoProtocol>? = nil, width: Swift.Int, height: Swift.Int, startDelay: Swift.Int? = nil, placementType: NimbusRequestKit.NimbusVideoPlacementType? = nil, linearity: NimbusRequestKit.NimbusVideoLinearity? = nil, playbackMethods: Swift.Set<NimbusRequestKit.NimbusVideoPlaybackMethod>? = nil, canSkip: Swift.Bool? = nil, deliveryMethods: Swift.Set<NimbusRequestKit.NimbusContentDeliveryMethod>? = nil, position: NimbusRequestKit.NimbusPosition? = nil, supportedApis: Swift.Set<NimbusRequestKit.NimbusApi>? = nil, minBitrate: Swift.Int? = nil, maxBitrate: Swift.Int? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var isRewarded: Swift.Bool {
+    get
+    set
+  }
+  public static func == (a: NimbusRequestKit.NimbusVideo, b: NimbusRequestKit.NimbusVideo) -> Swift.Bool
+}
+extension NimbusRequestKit.NimbusVideo {
+  public static func interstitial() -> NimbusRequestKit.NimbusVideo
+}
+public enum NimbusVideoProtocol : Swift.Int, Swift.CaseIterable, Swift.Codable {
+  case vast2
+  case vast3
+  case vast2Wrapper
+  case vast3Wrapper
+  case vast4
+  case vast4Wrapper
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [NimbusRequestKit.NimbusVideoProtocol]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [NimbusRequestKit.NimbusVideoProtocol] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct NimbusDevice : Swift.Codable, Swift.Equatable {
+  public var userAgent: Swift.String
+  public var geo: NimbusRequestKit.NimbusGeo?
+  public var doNotTrack: Swift.Bool?
+  public var limitAdTracking: Swift.Bool?
+  public var ip: Swift.String?
+  public var deviceType: NimbusRequestKit.NimbusDeviceType?
+  public var make: Swift.String?
+  public var model: Swift.String?
+  public var operatingSystem: Swift.String
+  public var operatingSystemVersion: Swift.String?
+  public var hardwareVersion: Swift.String?
+  public var width: Swift.Int?
+  public var height: Swift.Int?
+  public var language: Swift.String?
+  public var carrier: Swift.String?
+  public var connectionType: NimbusCoreKit.NimbusConnectionType?
+  public var advertisingId: Swift.String
+  public var pixelRatio: CoreFoundation.CGFloat
+  public var extensions: [Swift.String : NimbusRequestKit.NimbusCodable]?
+  public init(userAgent: Swift.String, geo: NimbusRequestKit.NimbusGeo? = nil, doNotTrack: Swift.Bool? = nil, limitAdTracking: Swift.Bool? = nil, ip: Swift.String? = nil, deviceType: NimbusRequestKit.NimbusDeviceType? = nil, make: Swift.String? = nil, model: Swift.String? = nil, operatingSystem: Swift.String, operatingSystemVersion: Swift.String? = nil, hardwareVersion: Swift.String? = nil, width: Swift.Int? = nil, height: Swift.Int? = nil, language: Swift.String? = nil, carrier: Swift.String? = nil, connectionType: NimbusCoreKit.NimbusConnectionType? = nil, pixelRatio: CoreFoundation.CGFloat = UIScreen.main.scale, advertisingId: Swift.String)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (a: NimbusRequestKit.NimbusDevice, b: NimbusRequestKit.NimbusDevice) -> Swift.Bool
+}
+public struct NimbusSource : Swift.Codable, Swift.Equatable, NimbusRequestKit.NimbusRequestExtensible {
+  public var extensions: [Swift.String : NimbusRequestKit.NimbusCodable]?
+  public init()
+  public static func == (a: NimbusRequestKit.NimbusSource, b: NimbusRequestKit.NimbusSource) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum NimbusNativeSize {
+  case small
+  case medium
+  case large
+  public static func == (a: NimbusRequestKit.NimbusNativeSize, b: NimbusRequestKit.NimbusNativeSize) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NimbusVideoPlacementType : Swift.Int, Swift.Codable {
+  case inStream
+  case inBanner
+  case inArticle
+  case inFeed
+  case interstitialSliderFloating
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum NimbusVideoPlaybackMethod : Swift.Int, Swift.Codable {
+  case pageLoadWithSoundOn
+  case pageLoadWithSoundOffByDefault
+  case clickWithSoundOn
+  case mouseOverWithSoundOn
+  case enteringViewportWithSoundOn
+  case enteringViewportWithSoundOffByDefault
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@usableFromInline
+internal protocol _AnyEncodable {
+  var value: Any { get }
+  init<T>(_ value: T)
+}
+extension NimbusRequestKit._AnyEncodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension NimbusRequestKit._AnyEncodable {
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
+}
+public struct NimbusApp : Swift.Codable, Swift.Equatable {
+  public var name: Swift.String?
+  public var domain: Foundation.URL?
+  public var bundle: Swift.String?
+  public var storeUrl: Foundation.URL?
+  public var appCategories: Swift.Set<Swift.String>?
+  public var sectionCategories: Swift.Set<Swift.String>?
+  public var pageCategories: Swift.Set<Swift.String>?
+  public var version: Swift.String?
+  public var hasPrivacyPolicy: Swift.Bool?
+  public var isPaidApp: Swift.Bool?
+  public var publisher: NimbusRequestKit.NimbusPublisher?
+  public init(name: Swift.String? = nil, domain: Foundation.URL? = nil, bundle: Swift.String? = nil, storeUrl: Foundation.URL? = nil, appCategories: Swift.Set<Swift.String>? = nil, sectionCategories: Swift.Set<Swift.String>? = nil, pageCategories: Swift.Set<Swift.String>? = nil, version: Swift.String? = nil, hasPrivacyPolicy: Swift.Bool? = nil, isPaidApp: Swift.Bool? = nil, publisher: NimbusRequestKit.NimbusPublisher? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (a: NimbusRequestKit.NimbusApp, b: NimbusRequestKit.NimbusApp) -> Swift.Bool
+}
+public struct NimbusSegment : Swift.Hashable, Swift.Codable {
+  public var id: Swift.String?
+  public var name: Swift.String?
+  public var value: Swift.String?
+  public init(id: Swift.String? = nil, name: Swift.String? = nil, value: Swift.String? = nil)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: NimbusRequestKit.NimbusSegment, b: NimbusRequestKit.NimbusSegment) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum NimbusRequestError : NimbusCoreKit.NimbusError {
+  case malformedRequest(message: Swift.String?)
+  case noAdFill
+  case response
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public struct CompressionLevel : Swift.RawRepresentable {
+  public let rawValue: Swift.Int32
+  public static let noCompression: NimbusRequestKit.CompressionLevel
+  public static let bestSpeed: NimbusRequestKit.CompressionLevel
+  public static let bestCompression: NimbusRequestKit.CompressionLevel
+  public static let defaultCompression: NimbusRequestKit.CompressionLevel
+  public init(rawValue: Swift.Int32)
+  public init(_ rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+}
+public struct GzipError : Swift.Error {
+  public enum Kind : Swift.Equatable {
+    case stream
+    case data
+    case memory
+    case buffer
+    case version
+    case unknown(code: Swift.Int)
+    public static func == (a: NimbusRequestKit.GzipError.Kind, b: NimbusRequestKit.GzipError.Kind) -> Swift.Bool
+  }
+  public let kind: NimbusRequestKit.GzipError.Kind
+  public let message: Swift.String
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+extension Foundation.Data {
+  public var isGzipped: Swift.Bool {
+    get
+  }
+  public func gzipped(level: NimbusRequestKit.CompressionLevel = .defaultCompression) throws -> Foundation.Data
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var nimbusModelName: Swift.String {
+    get
+  }
+}
+public enum NimbusIPServiceType : Swift.Int, Swift.Codable {
+  case ip2Location
+  case neustar
+  case maxMind
+  case netAcuity
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct NimbusAdFormat : Swift.Hashable, Swift.Codable {
+  public var width: Swift.Int
+  public var height: Swift.Int
+  public init(width: Swift.Int, height: Swift.Int)
+  public static var interstitialPortrait: NimbusRequestKit.NimbusAdFormat {
+    get
+  }
+  public static var interstitialLandscape: NimbusRequestKit.NimbusAdFormat {
+    get
+  }
+  public static var banner300x50: NimbusRequestKit.NimbusAdFormat {
+    get
+  }
+  public static var banner320x50: NimbusRequestKit.NimbusAdFormat {
+    get
+  }
+  public static var letterbox: NimbusRequestKit.NimbusAdFormat {
+    get
+  }
+  public static var halfScreen: NimbusRequestKit.NimbusAdFormat {
+    get
+  }
+  public static var leaderboard: NimbusRequestKit.NimbusAdFormat {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: NimbusRequestKit.NimbusAdFormat, b: NimbusRequestKit.NimbusAdFormat) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class NimbusRequest : Swift.Codable, NimbusRequestKit.NimbusRequestExtensible, Swift.Hashable, Swift.Equatable {
+  public var impressions: [NimbusRequestKit.NimbusImpression]
+  public var app: NimbusRequestKit.NimbusApp?
+  public var device: NimbusRequestKit.NimbusDevice
+  public var format: NimbusRequestKit.NimbusAdFormat
+  public var user: NimbusRequestKit.NimbusUser?
+  public var isTest: Swift.Bool?
+  public var whitelistBuyers: Swift.Set<Swift.String>?
+  public var blocklistBuyers: Swift.Set<Swift.String>?
+  public var whitelistLanguages: Swift.Set<Swift.String>?
+  public var blockedCategories: Swift.Set<Swift.String>?
+  public var blockedAdvertisingDomains: Swift.Set<Foundation.URL>?
+  public var blockedApps: Swift.Set<Swift.String>?
+  public var source: NimbusRequestKit.NimbusSource?
+  public var regs: NimbusRequestKit.NimbusRegs?
+  public var auctionTimeout: Swift.Int?
+  public var extensions: [Swift.String : NimbusRequestKit.NimbusCodable]?
+  public var interceptors: [any NimbusRequestKit.NimbusRequestInterceptor]?
+  public init(impressions: [NimbusRequestKit.NimbusImpression], app: NimbusRequestKit.NimbusApp? = nil, device: NimbusRequestKit.NimbusDevice, format: NimbusRequestKit.NimbusAdFormat, user: NimbusRequestKit.NimbusUser? = nil, isTest: Swift.Bool? = nil, whitelistBuyers: Swift.Set<Swift.String>? = nil, blacklistBuyers: Swift.Set<Swift.String>? = nil, whitelistLanguages: Swift.Set<Swift.String>? = nil, blockedCategories: Swift.Set<Swift.String>? = nil, blockedAdvertisingDomains: Swift.Set<Foundation.URL>? = nil, blockedApps: Swift.Set<Swift.String>? = nil, source: NimbusRequestKit.NimbusSource? = nil, regs: NimbusRequestKit.NimbusRegs? = nil, auctionTimeout: Swift.Int? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: NimbusRequestKit.NimbusRequest, rhs: NimbusRequestKit.NimbusRequest) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var sessionId: Swift.String? {
+    get
+  }
+  public func configure(sessionId: Swift.String)
+  public func addExtendedId(_ eid: NimbusRequestKit.NimbusExtendedId)
+  public func configureViewability(partnerName: Swift.String, partnerVersion: Swift.String)
+  @objc deinit
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NimbusVideoLinearity : Swift.Int, Swift.Codable {
+  case linearOrInStream
+  case nonLinearOrOverlay
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum NimbusApi : Swift.Int, Swift.Codable {
+  case vpaid1
+  case vpaid2
+  case mraid1
+  case ormma
+  case mraid2
+  case mraid3
+  case omid1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct NimbusPublisher : Swift.Codable, Swift.Equatable {
+  public var name: Swift.String?
+  public var domain: Foundation.URL?
+  public var appCategories: Swift.Set<Swift.String>?
+  public init(name: Swift.String? = nil, domain: Foundation.URL? = nil, appCategories: Swift.Set<Swift.String>? = nil)
+  public static func == (a: NimbusRequestKit.NimbusPublisher, b: NimbusRequestKit.NimbusPublisher) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum NimbusLocationType : Swift.Int, Swift.Codable {
+  case gps
+  case ipLookup
+  case userProvided
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct NimbusData : Swift.Hashable, Swift.Codable, Swift.Equatable {
+  public var id: Swift.String?
+  public var name: Swift.String?
+  public var segments: Swift.Set<NimbusRequestKit.NimbusSegment>?
+  public init(id: Swift.String? = nil, name: Swift.String? = nil, segments: Swift.Set<NimbusRequestKit.NimbusSegment>? = nil)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: NimbusRequestKit.NimbusData, b: NimbusRequestKit.NimbusData) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum NimbusDeviceType : Swift.Int, Swift.Codable {
+  case mobileOrTablet
+  case personalComputer
+  case connectedTV
+  case phone
+  case tablet
+  case connectedDevice
+  case setTopBox
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct NimbusUser : Swift.Codable, Swift.Equatable, NimbusRequestKit.NimbusRequestExtensible {
+  public var age: Swift.Int?
+  public var buyerUID: Swift.String?
+  public var yearOfBirth: Swift.Int?
+  public var gender: NimbusRequestKit.NimbusUserGender?
+  public var keywords: Swift.String?
+  public var customData: Swift.String?
+  public var data: Swift.Set<NimbusRequestKit.NimbusData>?
+  public var extensions: [Swift.String : NimbusRequestKit.NimbusCodable]?
+  public init(age: Swift.Int? = nil, buyerUID: Swift.String? = nil, yearOfBirth: Swift.Int? = nil, gender: NimbusRequestKit.NimbusUserGender? = nil, keywords: Swift.String? = nil, customData: Swift.String? = nil, data: Swift.Set<NimbusRequestKit.NimbusData>? = nil)
+  public mutating func configureGdprConsent(consentString: Swift.String)
+  @available(*, deprecated, message: "Use configureGdprConsent:consentString instead")
+  public mutating func configureGdprConsent(didConsent: Swift.Bool, consentString: Swift.String? = nil)
+  public static func == (a: NimbusRequestKit.NimbusUser, b: NimbusRequestKit.NimbusUser) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct NimbusGeo : Swift.Codable, Swift.Equatable {
+  public var latitude: Swift.Float
+  public var longitude: Swift.Float
+  public var type: NimbusRequestKit.NimbusLocationType?
+  public var ipService: NimbusRequestKit.NimbusIPServiceType?
+  public var country: Swift.String?
+  public var city: Swift.String?
+  public var metro: Swift.String?
+  public var state: Swift.String?
+  public init(latitude: Swift.Float, longitude: Swift.Float, type: NimbusRequestKit.NimbusLocationType? = nil, ipService: NimbusRequestKit.NimbusIPServiceType? = nil, country: Swift.String? = nil, city: Swift.String? = nil, metro: Swift.String? = nil, state: Swift.String? = nil)
+  public static func == (a: NimbusRequestKit.NimbusGeo, b: NimbusRequestKit.NimbusGeo) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@usableFromInline
+internal protocol _AnyDecodable {
+  var value: Any { get }
+  init<T>(_ value: T)
+}
+extension NimbusRequestKit._AnyDecodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct NimbusImpression : Swift.Codable, Swift.Equatable, NimbusRequestKit.NimbusRequestExtensible {
+  public var id: Swift.String?
+  public var banner: NimbusRequestKit.NimbusBanner?
+  public var video: NimbusRequestKit.NimbusVideo?
+  public var native: NimbusRequestKit.NimbusNative?
+  public var isInterstitial: Swift.Bool?
+  public var requiresSecure: Swift.Bool?
+  public var extensions: [Swift.String : NimbusRequestKit.NimbusCodable]?
+  public init(id: Swift.String? = nil, banner: NimbusRequestKit.NimbusBanner? = nil, video: NimbusRequestKit.NimbusVideo? = nil, native: NimbusRequestKit.NimbusNative? = nil, isInterstitial: Swift.Bool? = nil, requiresSecure: Swift.Bool? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (a: NimbusRequestKit.NimbusImpression, b: NimbusRequestKit.NimbusImpression) -> Swift.Bool
+}
+extension NimbusRequestKit.NimbusImpression {
+  public var position: Swift.String? {
+    get
+    set
+  }
+}
+public struct NimbusNative : Swift.Codable, Swift.Equatable {
+  @available(*, deprecated)
+  public var id: Swift.String?
+  public var bidFloor: Swift.Float?
+  public var request: Swift.String
+  public var version: Swift.String?
+  public var supportedApis: Swift.Set<NimbusRequestKit.NimbusApi>?
+  public var blockedCreativeAttributes: Swift.Set<NimbusRequestKit.NimbusCreativeAttribute>?
+  public var extensions: [Swift.String : NimbusRequestKit.NimbusCodable]?
+  public init(id: Swift.String? = nil, bidFloor: Swift.Float? = nil, request: Swift.String, version: Swift.String? = nil, supportedApis: Swift.Set<NimbusRequestKit.NimbusApi>? = nil, blockedCreativeAttributes: Swift.Set<NimbusRequestKit.NimbusCreativeAttribute>? = nil, native: NimbusRequestKit.Native? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (a: NimbusRequestKit.NimbusNative, b: NimbusRequestKit.NimbusNative) -> Swift.Bool
+}
+public enum NimbusUserGender : Swift.String, Swift.Codable {
+  case male
+  case female
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+final public class NimbusAuctionResultNotifier : NimbusRequestKit.NimbusAuctionResultNotifierType {
+  public init(logger: any NimbusCoreKit.Logger = Nimbus.shared.logger, session: Foundation.URLSession = URLSession.shared)
+  final public func notifyWin(ad: NimbusCoreKit.NimbusAd, auctionData: NimbusRequestKit.NimbusAuctionData?)
+  final public func notifyLoss(ad: NimbusCoreKit.NimbusAd, auctionData: NimbusRequestKit.NimbusAuctionData?)
+  @objc deinit
+}
+public struct NimbusBanner : Swift.Codable, Swift.Equatable {
+  public var bidFloor: Swift.Float?
+  public var blockedCreativeAttributes: Swift.Set<NimbusRequestKit.NimbusCreativeAttribute>?
+  public var formats: Swift.Set<NimbusRequestKit.NimbusAdFormat>?
+  public var width: Swift.Int
+  public var height: Swift.Int
+  public var supportedApis: Swift.Set<NimbusRequestKit.NimbusApi>?
+  public var position: NimbusRequestKit.NimbusPosition?
+  public var companionAdRenderMode: NimbusCoreKit.NimbusCompanionAdRenderMode?
+  public init(bidFloor: Swift.Float? = nil, blockedCreativeAttributes: Swift.Set<NimbusRequestKit.NimbusCreativeAttribute>? = nil, formats: Swift.Set<NimbusRequestKit.NimbusAdFormat>? = nil, width: Swift.Int, height: Swift.Int, supportedApis: Swift.Set<NimbusRequestKit.NimbusApi>? = nil, position: NimbusRequestKit.NimbusPosition? = nil, companionAdRenderMode: NimbusCoreKit.NimbusCompanionAdRenderMode? = nil)
+  public static func == (a: NimbusRequestKit.NimbusBanner, b: NimbusRequestKit.NimbusBanner) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension NimbusRequestKit.NimbusBanner {
+  public static func interstitial() -> NimbusRequestKit.NimbusBanner
+  public static func banner(format: NimbusRequestKit.NimbusAdFormat, adPosition: NimbusRequestKit.NimbusPosition) -> NimbusRequestKit.NimbusBanner
+}
+public struct NimbusAuctionData : Swift.Equatable {
+  public let auctionPrice: Swift.String?
+  public let auctionMinToWin: Swift.String?
+  public let winningSource: Swift.String?
+  public init(auctionPrice: Swift.String? = nil, auctionMinToWin: Swift.String? = nil, winningSource: Swift.String? = nil)
+  public static func == (a: NimbusRequestKit.NimbusAuctionData, b: NimbusRequestKit.NimbusAuctionData) -> Swift.Bool
+}
+public protocol RequestManager : AnyObject {
+  static var sessionId: Swift.String { get set }
+  static var app: NimbusRequestKit.NimbusApp? { get set }
+  static var user: NimbusRequestKit.NimbusUser? { get set }
+  static var blocklistBuyers: Swift.Set<Swift.String>? { get set }
+  static var blockedAdvertisingDomains: Swift.Set<Foundation.URL>? { get set }
+  static var blockedApps: Swift.Set<Swift.String>? { get set }
+  static var requestInterceptors: [any NimbusRequestKit.NimbusRequestInterceptor]? { get set }
+  static var source: NimbusRequestKit.NimbusSource? { get set }
+  static var requestUrl: Foundation.URL? { get set }
+  static var additionalRequestHeaders: [Swift.String : Swift.String]? { get set }
+  static var auctionTimeout: Swift.Int? { get set }
+}
+extension NimbusRequestKit.NimbusRequest {
+  public static func forInterstitialAd(position: Swift.String) -> NimbusRequestKit.NimbusRequest
+  public static func forBannerAd(position: Swift.String, format: NimbusRequestKit.NimbusAdFormat = .banner320x50, adPosition: NimbusRequestKit.NimbusPosition = .unknown) -> NimbusRequestKit.NimbusRequest
+  public static func forVideoAd(position: Swift.String, adPosition: NimbusRequestKit.NimbusPosition = .unknown) -> NimbusRequestKit.NimbusRequest
+  public static func forRewardedVideo(position: Swift.String) -> NimbusRequestKit.NimbusRequest
+  public static func forNativeAd(position: Swift.String, size: NimbusRequestKit.NimbusNativeSize = .medium, includeVideo: Swift.Bool = false, adContext: NimbusRequestKit.Native.Context? = nil, adContextSubType: NimbusRequestKit.Native.ContextSubType? = nil, placementType: NimbusRequestKit.Native.PlacementType? = nil, blockedCreativeAttributes: Swift.Set<NimbusRequestKit.NimbusCreativeAttribute>? = nil) -> NimbusRequestKit.NimbusRequest
+  @discardableResult
+  public func addNativeAd(size: NimbusRequestKit.NimbusNativeSize = .medium, includeVideo: Swift.Bool = false, adContext: NimbusRequestKit.Native.Context? = nil, adContextSubType: NimbusRequestKit.Native.ContextSubType? = nil, placementType: NimbusRequestKit.Native.PlacementType? = nil, blockedCreativeAttributes: Swift.Set<NimbusRequestKit.NimbusCreativeAttribute>? = nil) -> Self
+}
+public protocol NimbusMobileFuseRequestModifierType {
+  static func modify(request: NimbusRequestKit.NimbusRequest, completion: @escaping () -> Swift.Void)
+}
+public struct NimbusExtendedId : Swift.Codable, Swift.Hashable, NimbusRequestKit.NimbusRequestExtensible {
+  public var source: Swift.String
+  public var uids: [NimbusRequestKit.NimbusExtendedId.UID]
+  @available(*, deprecated, message: "use uids[index].id instead")
+  public var id: Swift.String {
+    get
+    set
+  }
+  @available(*, deprecated, message: "use uids[index].extensions instead")
+  public var extensions: [Swift.String : NimbusRequestKit.NimbusCodable]? {
+    get
+    set
+  }
+  public struct UID : Swift.Codable, Swift.Equatable {
+    public var id: Swift.String
+    public var atype: Swift.Int?
+    public var extensions: [Swift.String : NimbusRequestKit.NimbusCodable]?
+    public init(id: Swift.String, atype: Swift.Int? = nil, extensions: [Swift.String : NimbusRequestKit.NimbusCodable]? = nil)
+    public static func == (a: NimbusRequestKit.NimbusExtendedId.UID, b: NimbusRequestKit.NimbusExtendedId.UID) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  @available(*, deprecated, message: "use init(source:uids:) instead")
+  public init(source: Swift.String, id: Swift.String)
+  public init(source: Swift.String, uids: [NimbusRequestKit.NimbusExtendedId.UID])
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: NimbusRequestKit.NimbusExtendedId, rhs: NimbusRequestKit.NimbusExtendedId) -> Swift.Bool
+  public func deepEquals(_ other: NimbusRequestKit.NimbusExtendedId) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol NimbusRequestInterceptor : AnyObject {
+  func modifyRequest(request: NimbusRequestKit.NimbusRequest)
+  func didCompleteNimbusRequest(with ad: NimbusCoreKit.NimbusAd)
+  func didFailNimbusRequest(with error: any NimbusCoreKit.NimbusError)
+}
+@_hasMissingDesignatedInitializers final public class NimbusRequestModifier {
+  @objc deinit
+}
+extension NimbusRequestKit.NimbusCreativeAttribute : Swift.Equatable {}
+extension NimbusRequestKit.NimbusCreativeAttribute : Swift.Hashable {}
+extension NimbusRequestKit.NimbusCreativeAttribute : Swift.RawRepresentable {}
+extension NimbusRequestKit.NimbusContentDeliveryMethod : Swift.Equatable {}
+extension NimbusRequestKit.NimbusContentDeliveryMethod : Swift.Hashable {}
+extension NimbusRequestKit.NimbusContentDeliveryMethod : Swift.RawRepresentable {}
+extension NimbusRequestKit.Native.Context : Swift.Hashable {}
+extension NimbusRequestKit.Native.Context : Swift.RawRepresentable {}
+extension NimbusRequestKit.Native.ContextSubType : Swift.Hashable {}
+extension NimbusRequestKit.Native.ContextSubType : Swift.RawRepresentable {}
+extension NimbusRequestKit.Native.PlacementType : Swift.Hashable {}
+extension NimbusRequestKit.Native.PlacementType : Swift.RawRepresentable {}
+extension NimbusRequestKit.NimbusPosition : Swift.Equatable {}
+extension NimbusRequestKit.NimbusPosition : Swift.Hashable {}
+extension NimbusRequestKit.NimbusPosition : Swift.RawRepresentable {}
+extension NimbusRequestKit.NimbusVideoProtocol : Swift.Equatable {}
+extension NimbusRequestKit.NimbusVideoProtocol : Swift.Hashable {}
+extension NimbusRequestKit.NimbusVideoProtocol : Swift.RawRepresentable {}
+extension NimbusRequestKit.NimbusNativeSize : Swift.Equatable {}
+extension NimbusRequestKit.NimbusNativeSize : Swift.Hashable {}
+extension NimbusRequestKit.NimbusVideoPlacementType : Swift.Equatable {}
+extension NimbusRequestKit.NimbusVideoPlacementType : Swift.Hashable {}
+extension NimbusRequestKit.NimbusVideoPlacementType : Swift.RawRepresentable {}
+extension NimbusRequestKit.NimbusVideoPlaybackMethod : Swift.Equatable {}
+extension NimbusRequestKit.NimbusVideoPlaybackMethod : Swift.Hashable {}
+extension NimbusRequestKit.NimbusVideoPlaybackMethod : Swift.RawRepresentable {}
+extension NimbusRequestKit.NimbusIPServiceType : Swift.Equatable {}
+extension NimbusRequestKit.NimbusIPServiceType : Swift.Hashable {}
+extension NimbusRequestKit.NimbusIPServiceType : Swift.RawRepresentable {}
+extension NimbusRequestKit.NimbusVideoLinearity : Swift.Equatable {}
+extension NimbusRequestKit.NimbusVideoLinearity : Swift.Hashable {}
+extension NimbusRequestKit.NimbusVideoLinearity : Swift.RawRepresentable {}
+extension NimbusRequestKit.NimbusApi : Swift.Equatable {}
+extension NimbusRequestKit.NimbusApi : Swift.Hashable {}
+extension NimbusRequestKit.NimbusApi : Swift.RawRepresentable {}
+extension NimbusRequestKit.NimbusLocationType : Swift.Equatable {}
+extension NimbusRequestKit.NimbusLocationType : Swift.Hashable {}
+extension NimbusRequestKit.NimbusLocationType : Swift.RawRepresentable {}
+extension NimbusRequestKit.NimbusDeviceType : Swift.Equatable {}
+extension NimbusRequestKit.NimbusDeviceType : Swift.Hashable {}
+extension NimbusRequestKit.NimbusDeviceType : Swift.RawRepresentable {}
+extension NimbusRequestKit.NimbusUserGender : Swift.Equatable {}
+extension NimbusRequestKit.NimbusUserGender : Swift.Hashable {}
+extension NimbusRequestKit.NimbusUserGender : Swift.RawRepresentable {}

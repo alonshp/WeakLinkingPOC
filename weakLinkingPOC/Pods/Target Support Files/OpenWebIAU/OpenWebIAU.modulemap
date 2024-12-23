@@ -1,0 +1,6 @@
+framework module OpenWebIAUSDK {
+  umbrella header "OpenWebIAU-umbrella.h"
+
+  export *
+  module * { export * }
+}

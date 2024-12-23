@@ -1,0 +1,6 @@
+framework module OpenWrapHandlerDFP {
+  umbrella header "OpenWrapHandlerDFP.h"
+
+  export *
+  module * { export * }
+}

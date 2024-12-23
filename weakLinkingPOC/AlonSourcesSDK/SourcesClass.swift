@@ -8,11 +8,11 @@
 import Foundation
 @_exported import UIKit
 
-#if canImport(OptionalFrameworkSDK)
-@_exported import OptionalFrameworkSDK
+#if canImport(OpenWebIAUSDK)
+@_exported import OpenWebIAUSDK
 #endif
 
-#if canImport(OptionalFrameworkSDK)
+#if canImport(OpenWebIAUSDK)
 public protocol OWMonitization {
     func foo()
 }
@@ -22,7 +22,7 @@ public protocol OWMonitization {
 }
 #endif
 
-#if canImport(OptionalFrameworkSDK)
+#if canImport(OpenWebIAUSDK)
 public struct OWMonitizationLayer: OWMonitization {
     public init() {
 
@@ -46,19 +46,21 @@ public class SourcesClass {
     public static func test() {
         print("SourcesClass test called!")
 
-        #if canImport(OptionalFrameworkSDK)
-        OptionalSDK.shared.doOptionalThing()
+        #if canImport(OpenWebIAUSDK)
+//        OptionalSDK.shared.doOptionalThing()
+        print("$$$ if canImport(OpenWebIAUSDK)!!")
         #endif
     }
 
     public static func ad(params: AdParamsProtocolBridge) -> UIView {
-        #if canImport(OptionalFrameworkSDK)
-        let adParams: AdParamsProtocol = AdParams(
-            a: params.a,
-            b: params.b
-        )
+        #if canImport(OpenWebIAUSDK)
+//        let adParams: AdParamsProtocol = AdParams(
+//            a: params.a,
+//            b: params.b
+//        )
         print("SourcesClass ad return OptionalSDK view!")
-        return OptionalSDK.shared.ad(params: adParams)
+//        return OptionalSDK.shared.ad(params: adParams)
+        return UIView()
         #else
         print("SourcesClass ad return empty view!")
         return UIView()

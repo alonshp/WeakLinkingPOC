@@ -1,0 +1,11 @@
+framework module NimbusRenderKit {
+  umbrella header "NimbusRenderKit.h"
+  export *
+
+  module * { export * }
+}
+
+module NimbusRenderKit.Swift {
+  header "NimbusRenderKit-Swift.h"
+  requires objc
+}

@@ -1,0 +1,395 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NimbusMobileFuseKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusCoreKit",
+        "printedName": "NimbusCoreKit",
+        "declKind": "Import",
+        "moduleName": "NimbusMobileFuseKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NimbusMobileFuseAdRenderer",
+        "printedName": "NimbusMobileFuseAdRenderer",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusMobileFuseAdRenderer",
+                "printedName": "NimbusMobileFuseKit.NimbusMobileFuseAdRenderer",
+                "usr": "s:19NimbusMobileFuseKit0abC10AdRendererC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19NimbusMobileFuseKit0abC10AdRendererCACycfc",
+            "mangledName": "$s19NimbusMobileFuseKit0abC10AdRendererCACycfc",
+            "moduleName": "NimbusMobileFuseKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "render",
+            "printedName": "render(ad:companionAd:container:adPresentingViewController:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdController",
+                "printedName": "any NimbusCoreKit.AdController",
+                "usr": "s:13NimbusCoreKit12AdControllerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAd",
+                "printedName": "NimbusCoreKit.NimbusAd",
+                "usr": "s:13NimbusCoreKit0A2AdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NimbusCoreKit.NimbusCompanionAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusCompanionAd",
+                    "printedName": "NimbusCoreKit.NimbusCompanionAd",
+                    "usr": "s:13NimbusCoreKit0A11CompanionAdV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdControllerDelegate",
+                "printedName": "any NimbusCoreKit.AdControllerDelegate",
+                "usr": "s:13NimbusCoreKit20AdControllerDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19NimbusMobileFuseKit0abC10AdRendererC6render2ad09companionE09container0H24PresentingViewController8delegate0a4CoreD00eM0_pAJ0aE0V_AJ0a9CompanionE0VSgSo6UIViewCSo0qM0CSgAJ0eM8Delegate_ptF",
+            "mangledName": "$s19NimbusMobileFuseKit0abC10AdRendererC6render2ad09companionE09container0H24PresentingViewController8delegate0a4CoreD00eM0_pAJ0aE0V_AJ0a9CompanionE0VSgSo6UIViewCSo0qM0CSgAJ0eM8Delegate_ptF",
+            "moduleName": "NimbusMobileFuseKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "renderBlocking",
+            "printedName": "renderBlocking(ad:companionAd:adPresentingViewController:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdController",
+                "printedName": "any NimbusCoreKit.AdController",
+                "usr": "s:13NimbusCoreKit12AdControllerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAd",
+                "printedName": "NimbusCoreKit.NimbusAd",
+                "usr": "s:13NimbusCoreKit0A2AdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NimbusCoreKit.NimbusCompanionAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusCompanionAd",
+                    "printedName": "NimbusCoreKit.NimbusCompanionAd",
+                    "usr": "s:13NimbusCoreKit0A11CompanionAdV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdControllerDelegate",
+                "printedName": "any NimbusCoreKit.AdControllerDelegate",
+                "usr": "s:13NimbusCoreKit20AdControllerDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19NimbusMobileFuseKit0abC10AdRendererC14renderBlocking2ad09companionE00I24PresentingViewController8delegate0a4CoreD00eM0_pAI0aE0V_AI0a9CompanionE0VSgSo06UIViewM0CAI0eM8Delegate_ptF",
+            "mangledName": "$s19NimbusMobileFuseKit0abC10AdRendererC14renderBlocking2ad09companionE00I24PresentingViewController8delegate0a4CoreD00eM0_pAI0aE0V_AI0a9CompanionE0VSgSo06UIViewM0CAI0eM8Delegate_ptF",
+            "moduleName": "NimbusMobileFuseKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19NimbusMobileFuseKit0abC10AdRendererC",
+        "mangledName": "$s19NimbusMobileFuseKit0abC10AdRendererC",
+        "moduleName": "NimbusMobileFuseKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AdRenderer",
+            "printedName": "AdRenderer",
+            "usr": "s:13NimbusCoreKit10AdRendererP",
+            "mangledName": "$s13NimbusCoreKit10AdRendererP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NimbusMobileFuseKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusRequestKit",
+        "printedName": "NimbusRequestKit",
+        "declKind": "Import",
+        "moduleName": "NimbusMobileFuseKit"
+      },
+      {
+        "kind": "Import",
+        "name": "MobileFuseSDK",
+        "printedName": "MobileFuseSDK",
+        "declKind": "Import",
+        "moduleName": "NimbusMobileFuseKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NimbusMobileFuseRequestModifier",
+        "printedName": "NimbusMobileFuseRequestModifier",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "modify",
+            "printedName": "modify(request:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusRequest",
+                "printedName": "NimbusRequestKit.NimbusRequest",
+                "usr": "s:16NimbusRequestKit0aB0C"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19NimbusMobileFuseKit0abC15RequestModifierC6modify7request10completiony0aeD00aE0C_yyctFZ",
+            "mangledName": "$s19NimbusMobileFuseKit0abC15RequestModifierC6modify7request10completiony0aeD00aE0C_yyctFZ",
+            "moduleName": "NimbusMobileFuseKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19NimbusMobileFuseKit0abC15RequestModifierC",
+        "mangledName": "$s19NimbusMobileFuseKit0abC15RequestModifierC",
+        "moduleName": "NimbusMobileFuseKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "NimbusMobileFuseRequestModifierType",
+            "printedName": "NimbusMobileFuseRequestModifierType",
+            "usr": "s:16NimbusRequestKit0a10MobileFuseB12ModifierTypeP",
+            "mangledName": "$s16NimbusRequestKit0a10MobileFuseB12ModifierTypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NimbusMobileFuseKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusCoreKit",
+        "printedName": "NimbusCoreKit",
+        "declKind": "Import",
+        "moduleName": "NimbusMobileFuseKit"
+      },
+      {
+        "kind": "Import",
+        "name": "MobileFuseSDK",
+        "printedName": "MobileFuseSDK",
+        "declKind": "Import",
+        "moduleName": "NimbusMobileFuseKit"
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusRenderKit",
+        "printedName": "NimbusRenderKit",
+        "declKind": "Import",
+        "moduleName": "NimbusMobileFuseKit"
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusCoreKit",
+        "printedName": "NimbusCoreKit",
+        "declKind": "Import",
+        "moduleName": "NimbusMobileFuseKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MobileFuseSDK",
+        "printedName": "MobileFuseSDK",
+        "declKind": "Import",
+        "moduleName": "NimbusMobileFuseKit"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusMobileFuseKit\/Request\/NimbusMobileFuseRequestModifier.swift",
+      "kind": "StringLiteral",
+      "offset": 500,
+      "length": 15,
+      "value": "\"mfx_buyerdata\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusMobileFuseKit\/Request\/NimbusMobileFuseRequestModifier.swift",
+      "kind": "FloatLiteral",
+      "offset": 555,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusMobileFuseKit\/Render\/NimbusMobileFuseAdController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1157,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusMobileFuseKit\/Render\/NimbusMobileFuseAdController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1179,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusMobileFuseKit\/Render\/NimbusMobileFuseAdController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1508,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusMobileFuseKit\/Render\/NimbusMobileFuseAdController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1666,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusMobileFuseKit\/Render\/NimbusMobileFuseAdController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1707,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusMobileFuseKit\/Render\/NimbusMobileFuseAdController.swift",
+      "kind": "StringLiteral",
+      "offset": 785,
+      "length": 28,
+      "value": "\"NimbusMobileFuseKit.NimbusMobileFuseAdController\""
+    }
+  ]
+}

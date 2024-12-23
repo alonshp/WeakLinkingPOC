@@ -1,0 +1,56 @@
+{
+  "name": "OpenWebIAU",
+  "version": "2.0.0",
+  "swift_versions": [
+    "5.0"
+  ],
+  "summary": "OpenWeb IAU SDK",
+  "description": "This SDK allows you to integrate OpenWeb IAU into your iOS app.",
+  "homepage": "https://www.openweb.com",
+  "authors": {
+    "Alon Shprung": "alon@applift-consulting.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "module_name": "OpenWebIAUSDK",
+  "static_framework": true,
+  "pod_target_xcconfig": {
+    "BUILD_LIBRARY_FOR_DISTRIBUTION": "YES"
+  },
+  "source": {
+    "git": "git@github.com:SpotIM/spotim-iau-sdk.git"
+  },
+  "source_files": "iOS/OpenWeb-IAU-Development/OpenWebIAU-SDK/**/*.swift",
+  "vendored_frameworks": "iOS/OpenWeb-IAU-Development/output/KmmSpotimStandaloneAd.xcframework",
+  "dependencies": {
+    "AdPlayerSDK": [
+      "~> 1.11.9"
+    ],
+    "OpenWrapSDK": [
+      "3.6.0"
+    ],
+    "OpenWrapHandlerDFP": [
+      "5.0.0"
+    ],
+    "AppHarbrSDK": [
+      "~> 1.14.0"
+    ],
+    "Google-Mobile-Ads-SDK": [
+      "~> 11.5.0"
+    ],
+    "NimbusSDK": [
+      "~> 2.20.0"
+    ],
+    "NimbusSDK/NimbusKit": [
+
+    ],
+    "NimbusSDK/NimbusRenderStaticKit": [
+
+    ],
+    "NimbusSDK/NimbusGAMKit": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

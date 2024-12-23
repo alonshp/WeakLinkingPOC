@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "git@github.com:alonshp/WeakLinkingPOC.git"}
   s.ios.deployment_target = '13.0'
 
-  s.source_files = "weakLinkingPOC/SourcesSDK/**/*"
+  s.source_files = "AlonSourcesSDK/**/*"
 
   # TODO - We will need to change the path
   s.pod_target_xcconfig = {

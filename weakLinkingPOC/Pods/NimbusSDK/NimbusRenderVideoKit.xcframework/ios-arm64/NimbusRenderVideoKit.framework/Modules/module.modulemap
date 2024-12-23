@@ -1,0 +1,11 @@
+framework module NimbusRenderVideoKit {
+  umbrella header "NimbusRenderVideoKit.h"
+  export *
+
+  module * { export * }
+}
+
+module NimbusRenderVideoKit.Swift {
+  header "NimbusRenderVideoKit-Swift.h"
+  requires objc
+}

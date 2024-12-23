@@ -1,0 +1,11 @@
+framework module AdPlayerSDK {
+  umbrella header "AdPlayerSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module AdPlayerSDK.Swift {
+  header "AdPlayerSDK-Swift.h"
+  requires objc
+}

@@ -1,0 +1,3511 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "NimbusRequestKit",
+        "printedName": "NimbusRequestKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdManager",
+        "printedName": "AdManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "volume",
+            "printedName": "volume",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit9AdManagerP6volumeSivp",
+            "mangledName": "$s9NimbusKit9AdManagerP6volumeSivp",
+            "moduleName": "NimbusKit",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit9AdManagerP6volumeSivg",
+                "mangledName": "$s9NimbusKit9AdManagerP6volumeSivg",
+                "moduleName": "NimbusKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : NimbusKit.AdManager>",
+                "sugared_genericSig": "<Self where Self : NimbusKit.AdManager>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit9AdManagerP6volumeSivs",
+                "mangledName": "$s9NimbusKit9AdManagerP6volumeSivs",
+                "moduleName": "NimbusKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : NimbusKit.AdManager>",
+                "sugared_genericSig": "<Self where Self : NimbusKit.AdManager>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit9AdManagerP6volumeSivM",
+                "mangledName": "$s9NimbusKit9AdManagerP6volumeSivM",
+                "moduleName": "NimbusKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : NimbusKit.AdManager>",
+                "sugared_genericSig": "<Self where Self : NimbusKit.AdManager>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(request:container:adPresentingViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusRequest",
+                "printedName": "NimbusRequestKit.NimbusRequest",
+                "usr": "s:16NimbusRequestKit0aB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit9AdManagerP04showC07request9container26adPresentingViewControllery0a7RequestB00aL0C_So6UIViewCSo0mK0CtF",
+            "mangledName": "$s9NimbusKit9AdManagerP04showC07request9container26adPresentingViewControllery0a7RequestB00aL0C_So6UIViewCSo0mK0CtF",
+            "moduleName": "NimbusKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : NimbusKit.AdManager>",
+            "sugared_genericSig": "<Self where Self : NimbusKit.AdManager>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9NimbusKit9AdManagerP",
+        "mangledName": "$s9NimbusKit9AdManagerP",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusCoreKit",
+        "printedName": "NimbusCoreKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "Exported"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ThirdPartyInterstitialAdManagerType",
+        "printedName": "ThirdPartyInterstitialAdManagerType",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "render",
+            "printedName": "render(ad:adPresentingViewController:companionAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdController",
+                "printedName": "any NimbusCoreKit.AdController",
+                "usr": "s:13NimbusCoreKit12AdControllerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAd",
+                "printedName": "NimbusCoreKit.NimbusAd",
+                "usr": "s:13NimbusCoreKit0A2AdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NimbusCoreKit.NimbusCompanionAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusCompanionAd",
+                    "printedName": "NimbusCoreKit.NimbusCompanionAd",
+                    "usr": "s:13NimbusCoreKit0A11CompanionAdV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit35ThirdPartyInterstitialAdManagerTypeP6render2ad0J24PresentingViewController09companionF00a4CoreB00fM0_pAH0aF0V_So06UIViewM0CAH0a9CompanionF0VSgtKF",
+            "mangledName": "$s9NimbusKit35ThirdPartyInterstitialAdManagerTypeP6render2ad0J24PresentingViewController09companionF00a4CoreB00fM0_pAH0aF0V_So06UIViewM0CAH0a9CompanionF0VSgtKF",
+            "moduleName": "NimbusKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : NimbusKit.ThirdPartyInterstitialAdManagerType>",
+            "sugared_genericSig": "<Self where Self : NimbusKit.ThirdPartyInterstitialAdManagerType>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit35ThirdPartyInterstitialAdManagerTypeP7destroyyyF",
+            "mangledName": "$s9NimbusKit35ThirdPartyInterstitialAdManagerTypeP7destroyyyF",
+            "moduleName": "NimbusKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : NimbusKit.ThirdPartyInterstitialAdManagerType>",
+            "sugared_genericSig": "<Self where Self : NimbusKit.ThirdPartyInterstitialAdManagerType>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9NimbusKit35ThirdPartyInterstitialAdManagerTypeP",
+        "mangledName": "$s9NimbusKit35ThirdPartyInterstitialAdManagerTypeP",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ThirdPartyInterstitialAdManager",
+        "printedName": "ThirdPartyInterstitialAdManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ThirdPartyInterstitialAdManager",
+                "printedName": "NimbusKit.ThirdPartyInterstitialAdManager",
+                "usr": "s:9NimbusKit31ThirdPartyInterstitialAdManagerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9NimbusKit31ThirdPartyInterstitialAdManagerCACycfc",
+            "mangledName": "$s9NimbusKit31ThirdPartyInterstitialAdManagerCACycfc",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "render",
+            "printedName": "render(ad:adPresentingViewController:companionAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdController",
+                "printedName": "any NimbusCoreKit.AdController",
+                "usr": "s:13NimbusCoreKit12AdControllerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAd",
+                "printedName": "NimbusCoreKit.NimbusAd",
+                "usr": "s:13NimbusCoreKit0A2AdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NimbusCoreKit.NimbusCompanionAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusCompanionAd",
+                    "printedName": "NimbusCoreKit.NimbusCompanionAd",
+                    "usr": "s:13NimbusCoreKit0A11CompanionAdV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit31ThirdPartyInterstitialAdManagerC6render2ad0I24PresentingViewController09companionF00a4CoreB00fL0_pAH0aF0V_So06UIViewL0CAH0a9CompanionF0VSgtKF",
+            "mangledName": "$s9NimbusKit31ThirdPartyInterstitialAdManagerC6render2ad0I24PresentingViewController09companionF00a4CoreB00fL0_pAH0aF0V_So06UIViewL0CAH0a9CompanionF0VSgtKF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit31ThirdPartyInterstitialAdManagerC7destroyyyF",
+            "mangledName": "$s9NimbusKit31ThirdPartyInterstitialAdManagerC7destroyyyF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9NimbusKit31ThirdPartyInterstitialAdManagerC",
+        "mangledName": "$s9NimbusKit31ThirdPartyInterstitialAdManagerC",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ThirdPartyInterstitialAdManagerType",
+            "printedName": "ThirdPartyInterstitialAdManagerType",
+            "usr": "s:9NimbusKit35ThirdPartyInterstitialAdManagerTypeP",
+            "mangledName": "$s9NimbusKit35ThirdPartyInterstitialAdManagerTypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusCoreKit",
+        "printedName": "NimbusCoreKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit"
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusRenderKit",
+        "printedName": "NimbusRenderKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit"
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusRenderKit",
+        "printedName": "NimbusRenderKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit"
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusRequestKit",
+        "printedName": "NimbusRequestKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NimbusAdManagerDelegate",
+        "printedName": "NimbusAdManagerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didRenderAd",
+            "printedName": "didRenderAd(request:ad:controller:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusRequest",
+                "printedName": "NimbusRequestKit.NimbusRequest",
+                "usr": "s:16NimbusRequestKit0aB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAd",
+                "printedName": "NimbusCoreKit.NimbusAd",
+                "usr": "s:13NimbusCoreKit0A2AdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdController",
+                "printedName": "any NimbusCoreKit.AdController",
+                "usr": "s:13NimbusCoreKit12AdControllerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A17AdManagerDelegateP09didRenderC07request2ad10controllery0a7RequestB00aK0C_0a4CoreB00aC0VAK0C10Controller_ptF",
+            "mangledName": "$s9NimbusKit0A17AdManagerDelegateP09didRenderC07request2ad10controllery0a7RequestB00aK0C_0a4CoreB00aC0VAK0C10Controller_ptF",
+            "moduleName": "NimbusKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : NimbusKit.NimbusAdManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : NimbusKit.NimbusAdManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9NimbusKit0A17AdManagerDelegateP",
+        "mangledName": "$s9NimbusKit0A17AdManagerDelegateP",
+        "moduleName": "NimbusKit",
+        "genericSig": "<τ_0_0 : NimbusRequestKit.NimbusRequestManagerDelegate>",
+        "sugared_genericSig": "<Self : NimbusRequestKit.NimbusRequestManagerDelegate>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "NimbusRequestManagerDelegate",
+            "printedName": "NimbusRequestManagerDelegate",
+            "usr": "s:16NimbusRequestKit0aB15ManagerDelegateP",
+            "mangledName": "$s16NimbusRequestKit0aB15ManagerDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusRenderKit",
+        "printedName": "NimbusRenderKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NimbusCustomEventUtils",
+        "printedName": "NimbusCustomEventUtils",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "position",
+            "printedName": "position(in:network:isBanner:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A16CustomEventUtilsC8position2in7network8isBannerSSSDys11AnyHashableVypGSg_SSSbtFZ",
+            "mangledName": "$s9NimbusKit0A16CustomEventUtilsC8position2in7network8isBannerSSSDys11AnyHashableVypGSg_SSSbtFZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9NimbusKit0A16CustomEventUtilsC",
+        "mangledName": "$s9NimbusKit0A16CustomEventUtilsC",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "NimbusRequestKit",
+        "printedName": "NimbusRequestKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NimbusKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NimbusAdManagerError",
+        "printedName": "NimbusAdManagerError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "undefinedAdPresentingViewController",
+            "printedName": "undefinedAdPresentingViewController",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NimbusKit.NimbusAdManagerError.Type) -> NimbusKit.NimbusAdManagerError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusAdManagerError",
+                    "printedName": "NimbusKit.NimbusAdManagerError",
+                    "usr": "s:9NimbusKit0A14AdManagerErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NimbusKit.NimbusAdManagerError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NimbusAdManagerError",
+                        "printedName": "NimbusKit.NimbusAdManagerError",
+                        "usr": "s:9NimbusKit0A14AdManagerErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NimbusKit0A14AdManagerErrorO09undefinedC24PresentingViewControlleryA2CmF",
+            "mangledName": "$s9NimbusKit0A14AdManagerErrorO09undefinedC24PresentingViewControlleryA2CmF",
+            "moduleName": "NimbusKit"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A14AdManagerErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s9NimbusKit0A14AdManagerErrorO16errorDescriptionSSSgvp",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A14AdManagerErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s9NimbusKit0A14AdManagerErrorO16errorDescriptionSSSgvg",
+                "moduleName": "NimbusKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAdManagerError",
+                "printedName": "NimbusKit.NimbusAdManagerError",
+                "usr": "s:9NimbusKit0A14AdManagerErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAdManagerError",
+                "printedName": "NimbusKit.NimbusAdManagerError",
+                "usr": "s:9NimbusKit0A14AdManagerErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A14AdManagerErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9NimbusKit0A14AdManagerErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A14AdManagerErrorO9hashValueSivp",
+            "mangledName": "$s9NimbusKit0A14AdManagerErrorO9hashValueSivp",
+            "moduleName": "NimbusKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A14AdManagerErrorO9hashValueSivg",
+                "mangledName": "$s9NimbusKit0A14AdManagerErrorO9hashValueSivg",
+                "moduleName": "NimbusKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A14AdManagerErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s9NimbusKit0A14AdManagerErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "NimbusKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9NimbusKit0A14AdManagerErrorO",
+        "mangledName": "$s9NimbusKit0A14AdManagerErrorO",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NimbusError",
+            "printedName": "NimbusError",
+            "usr": "s:13NimbusCoreKit0A5ErrorP",
+            "mangledName": "$s13NimbusCoreKit0A5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NimbusAdManager",
+        "printedName": "NimbusAdManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sessionId",
+            "printedName": "sessionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC9sessionIdSSvpZ",
+            "mangledName": "$s9NimbusKit0A9AdManagerC9sessionIdSSvpZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Inlinable",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC9sessionIdSSvgZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC9sessionIdSSvgZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC9sessionIdSSvsZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC9sessionIdSSvsZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC9sessionIdSSvMZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC9sessionIdSSvMZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "app",
+            "printedName": "app",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NimbusRequestKit.NimbusApp?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusApp",
+                    "printedName": "NimbusRequestKit.NimbusApp",
+                    "usr": "s:16NimbusRequestKit0A3AppV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC3app0a7RequestB00A3AppVSgvpZ",
+            "mangledName": "$s9NimbusKit0A9AdManagerC3app0a7RequestB00A3AppVSgvpZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Inlinable",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NimbusRequestKit.NimbusApp?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NimbusApp",
+                        "printedName": "NimbusRequestKit.NimbusApp",
+                        "usr": "s:16NimbusRequestKit0A3AppV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC3app0a7RequestB00A3AppVSgvgZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC3app0a7RequestB00A3AppVSgvgZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NimbusRequestKit.NimbusApp?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NimbusApp",
+                        "printedName": "NimbusRequestKit.NimbusApp",
+                        "usr": "s:16NimbusRequestKit0A3AppV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC3app0a7RequestB00A3AppVSgvsZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC3app0a7RequestB00A3AppVSgvsZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC3app0a7RequestB00A3AppVSgvMZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC3app0a7RequestB00A3AppVSgvMZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "user",
+            "printedName": "user",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NimbusRequestKit.NimbusUser?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusUser",
+                    "printedName": "NimbusRequestKit.NimbusUser",
+                    "usr": "s:16NimbusRequestKit0A4UserV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC4user0a7RequestB00A4UserVSgvpZ",
+            "mangledName": "$s9NimbusKit0A9AdManagerC4user0a7RequestB00A4UserVSgvpZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Inlinable",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NimbusRequestKit.NimbusUser?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NimbusUser",
+                        "printedName": "NimbusRequestKit.NimbusUser",
+                        "usr": "s:16NimbusRequestKit0A4UserV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC4user0a7RequestB00A4UserVSgvgZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC4user0a7RequestB00A4UserVSgvgZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NimbusRequestKit.NimbusUser?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NimbusUser",
+                        "printedName": "NimbusRequestKit.NimbusUser",
+                        "usr": "s:16NimbusRequestKit0A4UserV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC4user0a7RequestB00A4UserVSgvsZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC4user0a7RequestB00A4UserVSgvsZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC4user0a7RequestB00A4UserVSgvMZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC4user0a7RequestB00A4UserVSgvMZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "blocklistBuyers",
+            "printedName": "blocklistBuyers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Set<Swift.String>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC15blocklistBuyersShySSGSgvpZ",
+            "mangledName": "$s9NimbusKit0A9AdManagerC15blocklistBuyersShySSGSgvpZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Inlinable",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Set<Swift.String>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Set",
+                        "printedName": "Swift.Set<Swift.String>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sh"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC15blocklistBuyersShySSGSgvgZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC15blocklistBuyersShySSGSgvgZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Set<Swift.String>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Set",
+                        "printedName": "Swift.Set<Swift.String>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sh"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC15blocklistBuyersShySSGSgvsZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC15blocklistBuyersShySSGSgvsZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC15blocklistBuyersShySSGSgvMZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC15blocklistBuyersShySSGSgvMZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "blockedAdvertisingDomains",
+            "printedName": "blockedAdvertisingDomains",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Set<Foundation.URL>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Foundation.URL>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC25blockedAdvertisingDomainsShy10Foundation3URLVGSgvpZ",
+            "mangledName": "$s9NimbusKit0A9AdManagerC25blockedAdvertisingDomainsShy10Foundation3URLVGSgvpZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Inlinable",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Set<Foundation.URL>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Set",
+                        "printedName": "Swift.Set<Foundation.URL>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sh"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC25blockedAdvertisingDomainsShy10Foundation3URLVGSgvgZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC25blockedAdvertisingDomainsShy10Foundation3URLVGSgvgZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Set<Foundation.URL>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Set",
+                        "printedName": "Swift.Set<Foundation.URL>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sh"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC25blockedAdvertisingDomainsShy10Foundation3URLVGSgvsZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC25blockedAdvertisingDomainsShy10Foundation3URLVGSgvsZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC25blockedAdvertisingDomainsShy10Foundation3URLVGSgvMZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC25blockedAdvertisingDomainsShy10Foundation3URLVGSgvMZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "blockedApps",
+            "printedName": "blockedApps",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Set<Swift.String>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC11blockedAppsShySSGSgvpZ",
+            "mangledName": "$s9NimbusKit0A9AdManagerC11blockedAppsShySSGSgvpZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Inlinable",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Set<Swift.String>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Set",
+                        "printedName": "Swift.Set<Swift.String>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sh"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC11blockedAppsShySSGSgvgZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC11blockedAppsShySSGSgvgZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Set<Swift.String>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Set",
+                        "printedName": "Swift.Set<Swift.String>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sh"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC11blockedAppsShySSGSgvsZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC11blockedAppsShySSGSgvsZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC11blockedAppsShySSGSgvMZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC11blockedAppsShySSGSgvMZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requestInterceptors",
+            "printedName": "requestInterceptors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[any NimbusRequestKit.NimbusRequestInterceptor]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any NimbusRequestKit.NimbusRequestInterceptor]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NimbusRequestInterceptor",
+                        "printedName": "any NimbusRequestKit.NimbusRequestInterceptor",
+                        "usr": "s:16NimbusRequestKit0aB11InterceptorP"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC19requestInterceptorsSay0a7RequestB00aG11Interceptor_pGSgvpZ",
+            "mangledName": "$s9NimbusKit0A9AdManagerC19requestInterceptorsSay0a7RequestB00aG11Interceptor_pGSgvpZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Inlinable",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[any NimbusRequestKit.NimbusRequestInterceptor]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[any NimbusRequestKit.NimbusRequestInterceptor]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NimbusRequestInterceptor",
+                            "printedName": "any NimbusRequestKit.NimbusRequestInterceptor",
+                            "usr": "s:16NimbusRequestKit0aB11InterceptorP"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC19requestInterceptorsSay0a7RequestB00aG11Interceptor_pGSgvgZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC19requestInterceptorsSay0a7RequestB00aG11Interceptor_pGSgvgZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[any NimbusRequestKit.NimbusRequestInterceptor]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[any NimbusRequestKit.NimbusRequestInterceptor]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NimbusRequestInterceptor",
+                            "printedName": "any NimbusRequestKit.NimbusRequestInterceptor",
+                            "usr": "s:16NimbusRequestKit0aB11InterceptorP"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC19requestInterceptorsSay0a7RequestB00aG11Interceptor_pGSgvsZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC19requestInterceptorsSay0a7RequestB00aG11Interceptor_pGSgvsZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC19requestInterceptorsSay0a7RequestB00aG11Interceptor_pGSgvMZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC19requestInterceptorsSay0a7RequestB00aG11Interceptor_pGSgvMZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "source",
+            "printedName": "source",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NimbusRequestKit.NimbusSource?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusSource",
+                    "printedName": "NimbusRequestKit.NimbusSource",
+                    "usr": "s:16NimbusRequestKit0A6SourceV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC6source0a7RequestB00A6SourceVSgvpZ",
+            "mangledName": "$s9NimbusKit0A9AdManagerC6source0a7RequestB00A6SourceVSgvpZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Inlinable",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NimbusRequestKit.NimbusSource?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NimbusSource",
+                        "printedName": "NimbusRequestKit.NimbusSource",
+                        "usr": "s:16NimbusRequestKit0A6SourceV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC6source0a7RequestB00A6SourceVSgvgZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC6source0a7RequestB00A6SourceVSgvgZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NimbusRequestKit.NimbusSource?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NimbusSource",
+                        "printedName": "NimbusRequestKit.NimbusSource",
+                        "usr": "s:16NimbusRequestKit0A6SourceV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC6source0a7RequestB00A6SourceVSgvsZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC6source0a7RequestB00A6SourceVSgvsZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC6source0a7RequestB00A6SourceVSgvMZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC6source0a7RequestB00A6SourceVSgvMZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requestUrl",
+            "printedName": "requestUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC10requestUrl10Foundation3URLVSgvpZ",
+            "mangledName": "$s9NimbusKit0A9AdManagerC10requestUrl10Foundation3URLVSgvpZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Inlinable",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC10requestUrl10Foundation3URLVSgvgZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC10requestUrl10Foundation3URLVSgvgZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC10requestUrl10Foundation3URLVSgvsZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC10requestUrl10Foundation3URLVSgvsZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC10requestUrl10Foundation3URLVSgvMZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC10requestUrl10Foundation3URLVSgvMZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "additionalRequestHeaders",
+            "printedName": "additionalRequestHeaders",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC24additionalRequestHeadersSDyS2SGSgvpZ",
+            "mangledName": "$s9NimbusKit0A9AdManagerC24additionalRequestHeadersSDyS2SGSgvpZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Inlinable",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC24additionalRequestHeadersSDyS2SGSgvgZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC24additionalRequestHeadersSDyS2SGSgvgZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC24additionalRequestHeadersSDyS2SGSgvsZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC24additionalRequestHeadersSDyS2SGSgvsZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC24additionalRequestHeadersSDyS2SGSgvMZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC24additionalRequestHeadersSDyS2SGSgvMZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "auctionTimeout",
+            "printedName": "auctionTimeout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC14auctionTimeoutSiSgvpZ",
+            "mangledName": "$s9NimbusKit0A9AdManagerC14auctionTimeoutSiSgvpZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Inlinable",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC14auctionTimeoutSiSgvgZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC14auctionTimeoutSiSgvgZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC14auctionTimeoutSiSgvsZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC14auctionTimeoutSiSgvsZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC14auctionTimeoutSiSgvMZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC14auctionTimeoutSiSgvMZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "extendedIds",
+            "printedName": "extendedIds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Set<NimbusRequestKit.NimbusExtendedId>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<NimbusRequestKit.NimbusExtendedId>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NimbusExtendedId",
+                        "printedName": "NimbusRequestKit.NimbusExtendedId",
+                        "usr": "s:16NimbusRequestKit0A10ExtendedIdV"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC11extendedIdsShy0a7RequestB00A10ExtendedIdVGSgvpZ",
+            "mangledName": "$s9NimbusKit0A9AdManagerC11extendedIdsShy0a7RequestB00A10ExtendedIdVGSgvpZ",
+            "moduleName": "NimbusKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Inlinable"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Set<NimbusRequestKit.NimbusExtendedId>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Set",
+                        "printedName": "Swift.Set<NimbusRequestKit.NimbusExtendedId>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NimbusExtendedId",
+                            "printedName": "NimbusRequestKit.NimbusExtendedId",
+                            "usr": "s:16NimbusRequestKit0A10ExtendedIdV"
+                          }
+                        ],
+                        "usr": "s:Sh"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC11extendedIdsShy0a7RequestB00A10ExtendedIdVGSgvgZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC11extendedIdsShy0a7RequestB00A10ExtendedIdVGSgvgZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Set<NimbusRequestKit.NimbusExtendedId>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Set",
+                        "printedName": "Swift.Set<NimbusRequestKit.NimbusExtendedId>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NimbusExtendedId",
+                            "printedName": "NimbusRequestKit.NimbusExtendedId",
+                            "usr": "s:16NimbusRequestKit0A10ExtendedIdV"
+                          }
+                        ],
+                        "usr": "s:Sh"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC11extendedIdsShy0a7RequestB00A10ExtendedIdVGSgvsZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC11extendedIdsShy0a7RequestB00A10ExtendedIdVGSgvsZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC11extendedIdsShy0a7RequestB00A10ExtendedIdVGSgvMZ",
+                "mangledName": "$s9NimbusKit0A9AdManagerC11extendedIdsShy0a7RequestB00A10ExtendedIdVGSgvMZ",
+                "moduleName": "NimbusKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "volume",
+            "printedName": "volume",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC6volumeSivp",
+            "mangledName": "$s9NimbusKit0A9AdManagerC6volumeSivp",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC6volumeSivg",
+                "mangledName": "$s9NimbusKit0A9AdManagerC6volumeSivg",
+                "moduleName": "NimbusKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC6volumeSivs",
+                "mangledName": "$s9NimbusKit0A9AdManagerC6volumeSivs",
+                "moduleName": "NimbusKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC6volumeSivM",
+                "mangledName": "$s9NimbusKit0A9AdManagerC6volumeSivM",
+                "moduleName": "NimbusKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any NimbusKit.NimbusAdManagerDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NimbusKit0A9AdManagerC8delegateAA0acD8Delegate_pSgvp",
+            "mangledName": "$s9NimbusKit0A9AdManagerC8delegateAA0acD8Delegate_pSgvp",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any NimbusKit.NimbusAdManagerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NimbusAdManagerDelegate",
+                        "printedName": "any NimbusKit.NimbusAdManagerDelegate",
+                        "usr": "s:9NimbusKit0A17AdManagerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC8delegateAA0acD8Delegate_pSgvg",
+                "mangledName": "$s9NimbusKit0A9AdManagerC8delegateAA0acD8Delegate_pSgvg",
+                "moduleName": "NimbusKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any NimbusKit.NimbusAdManagerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NimbusAdManagerDelegate",
+                        "printedName": "any NimbusKit.NimbusAdManagerDelegate",
+                        "usr": "s:9NimbusKit0A17AdManagerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC8delegateAA0acD8Delegate_pSgvs",
+                "mangledName": "$s9NimbusKit0A9AdManagerC8delegateAA0acD8Delegate_pSgvs",
+                "moduleName": "NimbusKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NimbusKit0A9AdManagerC8delegateAA0acD8Delegate_pSgvM",
+                "mangledName": "$s9NimbusKit0A9AdManagerC8delegateAA0acD8Delegate_pSgvM",
+                "moduleName": "NimbusKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(publisher:apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAdManager",
+                "printedName": "NimbusKit.NimbusAdManager",
+                "usr": "s:9NimbusKit0A9AdManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9NimbusKit0A9AdManagerC9publisher6apiKeyACSSSg_AFtcfc",
+            "mangledName": "$s9NimbusKit0A9AdManagerC9publisher6apiKeyACSSSg_AFtcfc",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(request:container:adPresentingViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusRequest",
+                "printedName": "NimbusRequestKit.NimbusRequest",
+                "usr": "s:16NimbusRequestKit0aB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC04showC07request9container26adPresentingViewControllery0a7RequestB00aL0C_So6UIViewCSo0mK0CtF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC04showC07request9container26adPresentingViewControllery0a7RequestB00aL0C_So6UIViewCSo0mK0CtF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(request:container:refreshInterval:adPresentingViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusRequest",
+                "printedName": "NimbusRequestKit.NimbusRequest",
+                "usr": "s:16NimbusRequestKit0aB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC04showC07request9container15refreshInterval26adPresentingViewControllery0a7RequestB00aN0C_So6UIViewCSdSo0oM0CtF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC04showC07request9container15refreshInterval26adPresentingViewControllery0a7RequestB00aN0C_So6UIViewCSdSo0oM0CtF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showBlockingAd",
+            "printedName": "showBlockingAd(request:closeButtonDelay:adPresentingViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusRequest",
+                "printedName": "NimbusRequestKit.NimbusRequest",
+                "usr": "s:16NimbusRequestKit0aB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC012showBlockingC07request16closeButtonDelay26adPresentingViewControllery0a7RequestB00aO0C_SdSo06UIViewN0CtF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC012showBlockingC07request16closeButtonDelay26adPresentingViewControllery0a7RequestB00aO0C_SdSo06UIViewN0CtF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showRewardedVideoAd",
+            "printedName": "showRewardedVideoAd(request:closeButtonDelay:adPresentingViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusRequest",
+                "printedName": "NimbusRequestKit.NimbusRequest",
+                "usr": "s:16NimbusRequestKit0aB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC017showRewardedVideoC07request16closeButtonDelay26adPresentingViewControllery0a7RequestB00aP0C_SdSo06UIViewO0CtF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC017showRewardedVideoC07request16closeButtonDelay26adPresentingViewControllery0a7RequestB00aP0C_SdSo06UIViewO0CtF",
+            "moduleName": "NimbusKit",
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showRewardedAd",
+            "printedName": "showRewardedAd(request:closeButtonDelay:adPresentingViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusRequest",
+                "printedName": "NimbusRequestKit.NimbusRequest",
+                "usr": "s:16NimbusRequestKit0aB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC012showRewardedC07request16closeButtonDelay26adPresentingViewControllery0a7RequestB00aO0C_SdSo06UIViewN0CtF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC012showRewardedC07request16closeButtonDelay26adPresentingViewControllery0a7RequestB00aO0C_SdSo06UIViewN0CtF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notifyWin",
+            "printedName": "notifyWin(ad:auctionData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAd",
+                "printedName": "NimbusCoreKit.NimbusAd",
+                "usr": "s:13NimbusCoreKit0A2AdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NimbusRequestKit.NimbusAuctionData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusAuctionData",
+                    "printedName": "NimbusRequestKit.NimbusAuctionData",
+                    "usr": "s:16NimbusRequestKit0A11AuctionDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC9notifyWin2ad11auctionDatay0a4CoreB00aC0V_0a7RequestB00a7AuctionI0VSgtF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC9notifyWin2ad11auctionDatay0a4CoreB00aC0V_0a7RequestB00a7AuctionI0VSgtF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notifyLoss",
+            "printedName": "notifyLoss(ad:auctionData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAd",
+                "printedName": "NimbusCoreKit.NimbusAd",
+                "usr": "s:13NimbusCoreKit0A2AdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NimbusRequestKit.NimbusAuctionData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NimbusAuctionData",
+                    "printedName": "NimbusRequestKit.NimbusAuctionData",
+                    "usr": "s:16NimbusRequestKit0A11AuctionDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC10notifyLoss2ad11auctionDatay0a4CoreB00aC0V_0a7RequestB00a7AuctionI0VSgtF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC10notifyLoss2ad11auctionDatay0a4CoreB00aC0V_0a7RequestB00a7AuctionI0VSgtF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didCompleteNimbusRequest",
+            "printedName": "didCompleteNimbusRequest(request:ad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusRequest",
+                "printedName": "NimbusRequestKit.NimbusRequest",
+                "usr": "s:16NimbusRequestKit0aB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAd",
+                "printedName": "NimbusCoreKit.NimbusAd",
+                "usr": "s:13NimbusCoreKit0A2AdV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC011didCompleteA7Request7request2ady0agB00aG0C_0a4CoreB00aC0VtF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC011didCompleteA7Request7request2ady0agB00aG0C_0a4CoreB00aC0VtF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFailNimbusRequest",
+            "printedName": "didFailNimbusRequest(request:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusRequest",
+                "printedName": "NimbusRequestKit.NimbusRequest",
+                "usr": "s:16NimbusRequestKit0aB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusError",
+                "printedName": "any NimbusCoreKit.NimbusError",
+                "usr": "s:13NimbusCoreKit0A5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC07didFailA7Request7request5errory0agB00aG0C_0a4CoreB00A5Error_ptF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC07didFailA7Request7request5errory0agB00aG0C_0a4CoreB00A5Error_ptF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didChangeVisibility",
+            "printedName": "didChangeVisibility(controller:isVisible:hasTriggeredImpression:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdController",
+                "printedName": "any NimbusCoreKit.AdController",
+                "usr": "s:13NimbusCoreKit12AdControllerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC19didChangeVisibility10controller9isVisible22hasTriggeredImpressiony0a4CoreB00C10Controller_p_S2btF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC19didChangeVisibility10controller9isVisible22hasTriggeredImpressiony0a4CoreB00C10Controller_p_S2btF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillAppear",
+            "printedName": "viewWillAppear(animated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC14viewWillAppear8animatedySb_tF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC14viewWillAppear8animatedySb_tF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidAppear",
+            "printedName": "viewDidAppear(animated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC13viewDidAppear8animatedySb_tF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC13viewDidAppear8animatedySb_tF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillDisappear",
+            "printedName": "viewWillDisappear(animated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC17viewWillDisappear8animatedySb_tF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC17viewWillDisappear8animatedySb_tF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidDisappear",
+            "printedName": "viewDidDisappear(animated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC16viewDidDisappear8animatedySb_tF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC16viewDidDisappear8animatedySb_tF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didCloseAd",
+            "printedName": "didCloseAd(adView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusAdView",
+                "printedName": "NimbusRenderKit.NimbusAdView",
+                "usr": "c:@M@NimbusRenderKit@objc(cs)NimbusAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC08didCloseC06adViewy0a6RenderB00acH0C_tF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC08didCloseC06adViewy0a6RenderB00acH0C_tF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveNimbusEvent",
+            "printedName": "didReceiveNimbusEvent(controller:event:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdController",
+                "printedName": "any NimbusCoreKit.AdController",
+                "usr": "s:13NimbusCoreKit12AdControllerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusEvent",
+                "printedName": "NimbusCoreKit.NimbusEvent",
+                "usr": "s:13NimbusCoreKit0A5EventO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC010didReceiveA5Event10controller5eventy0a4CoreB00C10Controller_p_AG0aG0OtF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC010didReceiveA5Event10controller5eventy0a4CoreB00C10Controller_p_AG0aG0OtF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveNimbusError",
+            "printedName": "didReceiveNimbusError(controller:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdController",
+                "printedName": "any NimbusCoreKit.AdController",
+                "usr": "s:13NimbusCoreKit12AdControllerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NimbusError",
+                "printedName": "any NimbusCoreKit.NimbusError",
+                "usr": "s:13NimbusCoreKit0A5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NimbusKit0A9AdManagerC010didReceiveA5Error10controller5errory0a4CoreB00C10Controller_p_AG0aG0_ptF",
+            "mangledName": "$s9NimbusKit0A9AdManagerC010didReceiveA5Error10controller5errory0a4CoreB00C10Controller_p_AG0aG0_ptF",
+            "moduleName": "NimbusKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9NimbusKit0A9AdManagerC",
+        "mangledName": "$s9NimbusKit0A9AdManagerC",
+        "moduleName": "NimbusKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "RequestManager",
+            "printedName": "RequestManager",
+            "usr": "s:16NimbusRequestKit0B7ManagerP",
+            "mangledName": "$s16NimbusRequestKit0B7ManagerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AdManager",
+            "printedName": "AdManager",
+            "usr": "s:9NimbusKit9AdManagerP",
+            "mangledName": "$s9NimbusKit9AdManagerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NimbusRequestManagerDelegate",
+            "printedName": "NimbusRequestManagerDelegate",
+            "usr": "s:16NimbusRequestKit0aB15ManagerDelegateP",
+            "mangledName": "$s16NimbusRequestKit0aB15ManagerDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AdVisibilityDelegate",
+            "printedName": "AdVisibilityDelegate",
+            "usr": "s:15NimbusRenderKit20AdVisibilityDelegateP",
+            "mangledName": "$s15NimbusRenderKit20AdVisibilityDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NimbusAdViewControllerDelegate",
+            "printedName": "NimbusAdViewControllerDelegate",
+            "usr": "s:15NimbusRenderKit0A24AdViewControllerDelegateP",
+            "mangledName": "$s15NimbusRenderKit0A24AdViewControllerDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AdControllerDelegate",
+            "printedName": "AdControllerDelegate",
+            "usr": "s:13NimbusCoreKit20AdControllerDelegateP",
+            "mangledName": "$s13NimbusCoreKit20AdControllerDelegateP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/ThirdParty\/ThirdPartyInterstitialAdManager.swift",
+      "kind": "Dictionary",
+      "offset": 856,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusManagedAd.swift",
+      "kind": "FloatLiteral",
+      "offset": 544,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusManagedAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1375,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusManagedAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1416,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusManagedAd.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1767,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusAdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3739,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusAdManager.swift",
+      "kind": "Dictionary",
+      "offset": 3957,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusAdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7057,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusAdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7845,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusAdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8648,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusAdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10895,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusAdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10930,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusAdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10966,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/nimbus-ios\/nimbus-ios\/Sources\/NimbusKit\/AdManager\/NimbusAdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11014,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

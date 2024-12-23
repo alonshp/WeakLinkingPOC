@@ -1,0 +1,8 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusCoreKit/NimbusCoreKit.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusKit/NimbusKit.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusKit/NimbusMobileFuseKit.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderKit/NimbusRenderKit.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderKit/OMSDK_Adsbynimbus.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderStaticKit/NimbusRenderStaticKit.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderVideoKit/NimbusRenderVideoKit.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRequestKit/NimbusRequestKit.framework

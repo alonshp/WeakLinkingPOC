@@ -1,0 +1,26 @@
+{
+  "name": "WeakLinkingPOCSDK",
+  "version": "1.0.0",
+  "summary": "SDK iOS SDK",
+  "description": "The iOS implementation of SDK",
+  "swift_versions": "5.0",
+  "license": {
+    "type": "Copyright"
+  },
+  "authors": "OpenWeb",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "homepage": "https://bitbucket.org/aniviewteam/spotim-sdk-kmm",
+  "source": {
+    "git": "git@bitbucket.org:aniviewteam/spotim-sdk-kmm.git"
+  },
+  "module_name": "weakLinkingPOCSDK",
+  "source_files": "weakLinkingPOCSDK/**/*",
+  "dependencies": {
+    "AlonSourcesSDK": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

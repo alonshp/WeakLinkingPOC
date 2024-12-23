@@ -1,0 +1,227 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NimbusRenderKit
+import CoreGraphics
+import Foundation
+@_exported import NimbusCoreKit
+@_exported import NimbusRenderKit
+import OMSDK_Adsbynimbus
+import StoreKit
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+final public class NimbusVisibilityManager {
+  final public var onExposureChange: ((NimbusCoreKit.NimbusViewExposure) -> Swift.Void)?
+  @objc deinit
+  public init()
+}
+extension NimbusRenderKit.NimbusVisibilityManager {
+  final public func startListeningForVisibilityChanges(of view: UIKit.UIView)
+  final public func updateVisibility()
+  @objc final public func appDidBecomeActive()
+  @objc final public func appWillResignActive()
+  final public func destroy()
+}
+final public class NimbusCreativeScaler : NimbusRenderKit.CreativeScaler {
+  final public func scaleCreativeIfNecessary(ad: NimbusCoreKit.NimbusAd, view: UIKit.UIView)
+  public init()
+  @objc deinit
+}
+public class NimbusAdViewabilityTrackerBuilder : NimbusCoreKit.AdViewabilityTrackerBuilder {
+  public init(verificationProviders: [any NimbusRenderKit.NimbusVerificationProvider]?)
+  public func build() -> any NimbusCoreKit.AdViewabilityTracker
+  @objc deinit
+}
+extension NimbusCoreKit.NimbusAd {
+  public var renderer: (any NimbusCoreKit.AdRenderer)? {
+    get
+  }
+  public var isUsingNimbusVideoRenderer: Swift.Bool {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class NimbusAdViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) weak final public var delegate: (any NimbusRenderKit.NimbusAdViewControllerDelegate)?
+  @_Concurrency.MainActor(unsafe) final public var isDismissAnimated: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public init(adView: NimbusRenderKit.NimbusAdView, ad: NimbusCoreKit.NimbusAd, companionAd: NimbusCoreKit.NimbusCompanionAd?, closeButtonDelay: Foundation.TimeInterval = 0, isRewardedAd: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) final public func renderAndStart()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidDisappear(_ animated: Swift.Bool)
+  @objc deinit
+}
+extension NimbusRenderKit.NimbusAdViewController : NimbusCoreKit.AdControllerDelegate {
+  @_Concurrency.MainActor(unsafe) final public func didReceiveNimbusEvent(controller: any NimbusCoreKit.AdController, event: NimbusCoreKit.NimbusEvent)
+  @_Concurrency.MainActor(unsafe) final public func didReceiveNimbusError(controller: any NimbusCoreKit.AdController, error: any NimbusCoreKit.NimbusError)
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var nimbusContainer: UIKit.UIView {
+    get
+  }
+}
+public protocol CreativeScaler {
+  func scaleCreativeIfNecessary(ad: NimbusCoreKit.NimbusAd, view: UIKit.UIView)
+}
+final public class NimbusMoatVerificationProvider : NimbusRenderKit.NimbusVerificationProvider {
+  public static var slicerOne: Swift.String
+  public static var levelOne: Swift.String
+  public init(staticKey: Swift.String, videoKey: Swift.String, nativeKey: Swift.String, mapping: @escaping (NimbusCoreKit.NimbusAd) -> [Swift.String : Swift.String] = { ad in
+            [
+                NimbusMoatVerificationProvider.slicerOne: ad.network,
+                NimbusMoatVerificationProvider.levelOne: ad.position
+            ]
+                .compactMapValues { $0 }
+        })
+  final public func verificationMarkup(ad: NimbusCoreKit.NimbusAd) -> Swift.String
+  final public func verificationResource(ad: NimbusCoreKit.NimbusAd) -> OMSDK_Adsbynimbus.OMIDAdsbynimbusVerificationScriptResource?
+  @objc deinit
+}
+final public class NimbusAdTrackingManager : NimbusRenderKit.AdTrackingManager {
+  public init()
+  final public func triggerImpressionTrackers(ad: NimbusCoreKit.NimbusAd)
+  final public func triggerClickTrackers(ad: NimbusCoreKit.NimbusAd, sessionId: Swift.String)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class NimbusAdView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public static let closeButton: Swift.String?
+  @_Concurrency.MainActor(unsafe) @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) final public var isBlocking: Swift.Bool
+  @_Concurrency.MainActor(unsafe) weak final public var visibilityDelegate: (any NimbusRenderKit.AdVisibilityDelegate)?
+  @_Concurrency.MainActor(unsafe) weak final public var internalDelegate: (any NimbusCoreKit.AdControllerDelegate)?
+  @_Concurrency.MainActor(unsafe) weak final public var delegate: (any NimbusCoreKit.AdControllerDelegate)?
+  @_Concurrency.MainActor(unsafe) final public var volume: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var friendlyObstructions: [UIKit.UIView]?
+  @_Concurrency.MainActor(unsafe) final public var viewabilityTracker: (any NimbusCoreKit.AdViewabilityTracker)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var ad: NimbusCoreKit.NimbusAd? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var showsSKOverlay: Swift.Bool
+  @_Concurrency.MainActor(unsafe) final public var isClickProtectionEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var exposure: NimbusCoreKit.NimbusViewExposure {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) weak final public var adPresentingViewController: UIKit.UIViewController?
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public init(lockOrientation: UIKit.UIDeviceOrientation? = nil, adPresentingViewController: UIKit.UIViewController?, viewabilityTrackerBuilder: (any NimbusCoreKit.AdViewabilityTrackerBuilder)? = Nimbus.shared.viewabilityProvider?.trackerBuilder)
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) final public func updateFriendlyObstructions()
+}
+extension NimbusRenderKit.NimbusAdView {
+  @_Concurrency.MainActor(unsafe) final public func render(ad: NimbusCoreKit.NimbusAd, companionAd: NimbusCoreKit.NimbusCompanionAd? = nil)
+}
+extension NimbusRenderKit.NimbusAdView : NimbusCoreKit.AdController {
+  @_Concurrency.MainActor(unsafe) final public var adDuration: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var adView: UIKit.UIView? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public func start()
+  @_Concurrency.MainActor(unsafe) final public func stop()
+  @_Concurrency.MainActor(unsafe) final public func destroy()
+  @_Concurrency.MainActor(unsafe) final public func didExposureChange(exposure: NimbusCoreKit.NimbusViewExposure)
+}
+extension NimbusRenderKit.NimbusAdView : NimbusCoreKit.AdControllerDelegate {
+  @_Concurrency.MainActor(unsafe) final public func didReceiveNimbusEvent(controller: any NimbusCoreKit.AdController, event: NimbusCoreKit.NimbusEvent)
+  @_Concurrency.MainActor(unsafe) final public func didReceiveNimbusError(controller: any NimbusCoreKit.AdController, error: any NimbusCoreKit.NimbusError)
+}
+public protocol AdTrackingManager : AnyObject {
+  func triggerImpressionTrackers(ad: NimbusCoreKit.NimbusAd)
+  func triggerClickTrackers(ad: NimbusCoreKit.NimbusAd, sessionId: Swift.String)
+}
+public protocol AdVisibilityDelegate : AnyObject {
+  func didChangeVisibility(controller: any NimbusCoreKit.AdController, isVisible: Swift.Bool, hasTriggeredImpression: Swift.Bool)
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public var nimbusSmartEdgePadding: UIKit.UIEdgeInsets {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func nimbusEdgePadding(of insets: UIKit.UIEdgeInsets) -> UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) public var nimbusSmartWidth: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var nimbusSmartHeight: CoreFoundation.CGFloat {
+    get
+  }
+}
+final public class NimbusAdViewabilityTracker : NimbusCoreKit.AdViewabilityTracker {
+  final public var adDuration: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  final public var volume: Swift.Int {
+    get
+    set
+  }
+  public init(verificationProviders: [any NimbusRenderKit.NimbusVerificationProvider]?, logger: any NimbusCoreKit.Logger = Nimbus.shared.logger)
+  final public func modifyAd(_ ad: NimbusCoreKit.NimbusAd) throws -> NimbusCoreKit.NimbusAd
+  final public func configureViewability(ad: NimbusCoreKit.NimbusAd, controller: (any NimbusCoreKit.AdController)?, container: UIKit.UIView, obstructions: [UIKit.UIView]?)
+  final public func updateFriendlyObstructions(_ obstructions: [UIKit.UIView]?) throws
+  final public func didReceiveNimbusEvent(_ event: NimbusCoreKit.NimbusEvent) throws
+  final public func didReceiveError(error: any NimbusCoreKit.NimbusError)
+  @objc deinit
+}
+public enum NimbusRenderError : NimbusCoreKit.NimbusError {
+  case alreadyDestroyed
+  case adRenderingFailed(message: Swift.String?)
+  case adUnsupportedAuctionType(auctionType: NimbusCoreKit.NimbusAuctionType, network: Swift.String)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension Swift.Int {
+  public var nimbusVolume: Swift.Int {
+    get
+  }
+  public var nimbusVolumePercentage: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension CoreFoundation.CGFloat {
+  public var nimbusVolume: Swift.Int {
+    get
+  }
+}
+public enum ThirdPartyDemandNetwork : Swift.String {
+  case facebook
+  case unity
+  case vungle
+  case mobileFuse
+  @inlinable public static func exists(for ad: NimbusCoreKit.NimbusAd) -> Swift.Bool {
+        ThirdPartyDemandNetwork(rawValue: ad.network.lowercased()) != nil
+    }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol NimbusVerificationProvider {
+  func verificationMarkup(ad: NimbusCoreKit.NimbusAd) -> Swift.String
+  func verificationResource(ad: NimbusCoreKit.NimbusAd) -> OMSDK_Adsbynimbus.OMIDAdsbynimbusVerificationScriptResource?
+}
+public protocol NimbusAdViewControllerDelegate : AnyObject {
+  func viewWillAppear(animated: Swift.Bool)
+  func viewDidAppear(animated: Swift.Bool)
+  func viewWillDisappear(animated: Swift.Bool)
+  func viewDidDisappear(animated: Swift.Bool)
+  func didCloseAd(adView: NimbusRenderKit.NimbusAdView)
+}
+extension NimbusRenderKit.ThirdPartyDemandNetwork : Swift.Equatable {}
+extension NimbusRenderKit.ThirdPartyDemandNetwork : Swift.Hashable {}
+extension NimbusRenderKit.ThirdPartyDemandNetwork : Swift.RawRepresentable {}

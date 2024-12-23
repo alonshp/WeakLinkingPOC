@@ -1,0 +1,6 @@
+framework module NimbusSDK {
+  umbrella header "NimbusSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

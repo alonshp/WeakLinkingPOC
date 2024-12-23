@@ -1,0 +1,362 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AdPlayerSDK
+@_exported import AdPlayerSDK
+import AdSupport
+import AppTrackingTransparency
+import CoreGraphics.CGGeometry
+import Combine
+import CoreGraphics
+import CoreLocation
+import CoreTelephony
+import CoreVideo
+import DeveloperToolsSupport
+import Foundation
+import GoogleInteractiveMediaAds
+import UIKit.NSDataAsset
+import Network
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+public protocol AdpCancellable : AnyObject {
+  func cancel()
+}
+#if compiler(>=5.3) && $PrimaryAssociatedTypes2
+public protocol AdpSubject<T> : AnyObject {
+  associatedtype T
+  func sink(onNewValue: @escaping (Self.T) -> Swift.Void) -> any AdPlayerSDK.AdpCancellable
+}
+#else
+public protocol AdpSubject : AnyObject {
+  associatedtype T
+  func sink(onNewValue: @escaping (Self.T) -> Swift.Void) -> any AdPlayerSDK.AdpCancellable
+}
+#endif
+@_hasMissingDesignatedInitializers final public class AdpAnyPublisher<T> : AdPlayerSDK.AdpSubject {
+  final public func sink(onNewValue: @escaping (T) -> Swift.Void) -> any AdPlayerSDK.AdpCancellable
+  @objc deinit
+}
+extension AdPlayerSDK.AdpSubject {
+  public func sink(on queue: Dispatch.DispatchQueue, onNewValue: @escaping (Self.T) -> Swift.Void) -> any AdPlayerSDK.AdpCancellable
+}
+@objc final public class AdPlayerTagConfiguration : ObjectiveC.NSObject {
+  weak final public var eventsObserver: (any AdPlayerSDK.AdPlayerTagEventsObserver)?
+  final public func addMacro(macro: AdPlayerSDK.AdPlayerMacro)
+  public init(tagId: Swift.String, overrideChannelId: Swift.String? = nil)
+  final public var instreamContentOverride: AdPlayerSDK.InstreamContent?
+  final public var trackContentTimeChange: Swift.Bool
+  @objc deinit
+}
+public protocol AdPlacementLayoutDelegate : AnyObject {
+  func adPlacementHeightWillChange(to newValue: CoreFoundation.CGFloat)
+}
+public struct AdPlayerMacro {
+  public enum Keys : Swift.String {
+    case cmsId
+    case playlistId
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(key: Swift.String, value: Swift.String)
+  public init(key: AdPlayerSDK.AdPlayerMacro.Keys, value: Swift.String)
+}
+@_hasMissingDesignatedInitializers final public class InterstitialPlacementBuilder {
+  final public func withConfiguration(_ configuration: AdPlayerSDK.InterstitialConfiguration) -> AdPlayerSDK.InterstitialPlacementBuilder
+  final public func onDismissed(_ closure: (() -> Swift.Void)?) -> AdPlayerSDK.InterstitialPlacementBuilder
+  final public func launch()
+  @objc deinit
+}
+extension AdPlayerSDK.AdPlayerTag {
+  final public func asInterstitial() -> AdPlayerSDK.InterstitialPlacementBuilder
+}
+@objc @_hasMissingDesignatedInitializers final public class AdPlayerTag : ObjectiveC.NSObject {
+  final public let id: Swift.String
+  weak final public var eventsObserver: (any AdPlayerSDK.AdPlayerTagEventsObserver)? {
+    get
+    set
+  }
+  final public var eventsPublisher: AdPlayerSDK.AdpAnyPublisher<AdPlayerSDK.AdPlayerEvent> {
+    get
+  }
+  final public var instreamContentOverride: AdPlayerSDK.InstreamContent? {
+    get
+    set
+  }
+  final public var playingState: AdPlayerSDK.AdPlayerPlayingState {
+    get
+  }
+  final public var playingStatePublisher: AdPlayerSDK.AdpAnyPublisher<AdPlayerSDK.AdPlayerPlayingState> {
+    get
+  }
+  @objc deinit
+}
+extension AdPlayerSDK.AdPlayerTag {
+  final public func pause()
+  final public func resume()
+  final public func preload(_ completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  final public func invalidatePreloadCache()
+  final public func getReadyAdsCount(_ completion: @escaping (Swift.Int) -> Swift.Void)
+  final public func updateContentList(_ jsonArray: [[Swift.String : Any]])
+  final public func addContentAt(index: Swift.Int, jsonObject: [Swift.String : Any])
+  final public func removeContentAt(_ index: Swift.Int)
+  final public func skipAd()
+  final public func mute()
+  final public func unmute()
+  final public func getIsMuted(_ completion: @escaping (Swift.Bool) -> Swift.Void)
+}
+public struct OverrideConfigOptions {
+  public let additionalDefaults: [Swift.String : Any]?
+  public let requestAttributes: [Swift.String : Any]?
+  public init(overrideDefaults: [Swift.String : Any]?, requestAttributes: [Swift.String : Any]?)
+}
+@objc @_Concurrency.MainActor(unsafe) open class AdPlayerPlacementView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak public var layoutDelegate: (any AdPlayerSDK.AdPlacementLayoutDelegate)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var mpvVisibilityDelay: Swift.Double {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public init(tagId: Swift.String? = nil, expandAnimationEnabled: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension AdPlayerSDK.AdPlayerPlacementView {
+  @_Concurrency.MainActor(unsafe) public func setPriority(_ priority: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func attach(tagId: Swift.String)
+}
+extension AdPlayerSDK.AdPlayerPlacementView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toSuperview newSuperview: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+}
+extension AdPlayerSDK.AdPlayerPlacementView {
+  @_Concurrency.MainActor(unsafe) public func setFloatingScope(scope: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) public func setFloatingScope(autodetect: Swift.Bool)
+}
+public enum RxProfile {
+  case auto
+  case rxSwift
+  @available(iOS 13.0, *)
+  case combine
+  public static func == (a: AdPlayerSDK.RxProfile, b: AdPlayerSDK.RxProfile) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct AdPlayerPlayingState {
+  public let state: AdPlayerSDK.AdPlayerPlaybackState
+  public let content: any AdPlayerSDK.AdPlayerContent
+  public let displayMode: AdPlayerSDK.AdPlayerDisplayMode
+  public let description: Swift.String
+}
+public protocol AdPlayerContent {
+  var type: AdPlayerSDK.AdPlayerContentType { get }
+  var description: Swift.String { get }
+}
+public struct AdPlayerContentNone : AdPlayerSDK.AdPlayerContent {
+  public let type: AdPlayerSDK.AdPlayerContentType
+  public let description: Swift.String
+}
+public enum AdPlayerPlaybackState {
+  case initial
+  case ready
+  case playing
+  case paused
+  case notPlaying
+  case display
+  public static func == (a: AdPlayerSDK.AdPlayerPlaybackState, b: AdPlayerSDK.AdPlayerPlaybackState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum AdPlayerContentType {
+  case none
+  case videoContent
+  case videoAd
+  case displayAd
+  public static func == (a: AdPlayerSDK.AdPlayerContentType, b: AdPlayerSDK.AdPlayerContentType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum AdPlayerDisplayMode {
+  case notDisplayed
+  case inread
+  case fullscreen
+  case floating
+  case interstitial
+  public static func == (a: AdPlayerSDK.AdPlayerDisplayMode, b: AdPlayerSDK.AdPlayerDisplayMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public let sdkVersionName: Swift.String
+extension AdPlayerSDK.AdPlayer {
+  @available(*, deprecated, message: "Use swift API")
+  @objc public static func initializeSDK(storeURL: Foundation.URL)
+  @available(*, deprecated, message: "Use swift API")
+  @objc public static func getTag(tagId: Swift.String, completion: @escaping (AdPlayerSDK.AdPlayerTag?, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "Use swift API")
+  @objc public static func initializePublisher(publisherId: Swift.String, tagId: Swift.String, completion: @escaping (AdPlayerSDK.AdPlayerTag?, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "Use swift API")
+  @objc public static func initializePublisher(_ configuration: AdPlayerSDK.AdPlayerPublisherConfiguration, _ completion: @escaping ([AdPlayerSDK.AdPlayerTag]?, (any Swift.Error)?) -> Swift.Void)
+}
+public struct InstreamContent : Swift.Equatable {
+  public enum CMSType : Swift.String {
+    case video
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let cmsId: Swift.String
+  public let cmsType: Swift.String
+  public init(cmsId: Swift.String, cmsType: Swift.String)
+  public init(cmsId: Swift.String, cmsType: AdPlayerSDK.InstreamContent.CMSType = .video)
+  public static func == (a: AdPlayerSDK.InstreamContent, b: AdPlayerSDK.InstreamContent) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class AdPlayerEventGeneric : AdPlayerSDK.AdPlayerEvent {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AdPlayerEventVolume : AdPlayerSDK.AdPlayerEvent {
+  final public let volume: Swift.Float
+  override public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AdPlayerEventError : AdPlayerSDK.AdPlayerEvent {
+  final public let message: Swift.String?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AdPlayerEvent : Swift.CustomStringConvertible {
+  final public let type: AdPlayerSDK.AdPlayerEventType
+  public var name: Swift.String {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class AdPlayerEventImpression : AdPlayerSDK.AdPlayerEvent {
+  final public let info: Swift.String?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class ContentVideoTimeChanged : AdPlayerSDK.AdPlayerEvent {
+  final public let duration: Foundation.TimeInterval
+  final public let position: Foundation.TimeInterval
+  override final public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+public enum AdPlayerEventType : Swift.Int {
+  case fullScreenRequested
+  case inventory
+  case adLoaded
+  case adImpression
+  case adViewableImpression
+  case adVideoFirstQuartile
+  case adVideoMidpoint
+  case adVideoThirdQuartile
+  case adVideoCompleted
+  case adClickThrough
+  case adSkipped
+  case adSkippableStateChanged
+  case closed
+  case adPaused
+  case adPlaying
+  case contentPaused
+  case contentPlaying
+  case adVolumeChange
+  case contentVolumeChange
+  case contentVideoStart
+  case contentVideoFirstQuartile
+  case contentVideoMidpoint
+  case contentVideoThirdQuartile
+  case contentVideoComplete
+  case contentVideoTimeChanged
+  case onWaterfallEnd
+  case adError
+  case adErrorLimit
+  case error
+  public var name: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol AdPlayerTagEventsObserver : AnyObject {
+  func onAdPlayerEvent(_ event: AdPlayerSDK.AdPlayerEvent)
+}
+public struct InterstitialConfiguration {
+  public var backgroundColor: UIKit.UIColor
+  public var noAdTimeoutSec: Swift.Int
+  public init(backgroundColor: UIKit.UIColor = .black, noAdTimeoutSec: Swift.Int = 10)
+}
+public enum AdPlayerError : Swift.Error {
+  case network(message: Swift.String, code: Swift.Int)
+  case internalError(message: Swift.String)
+  case invalidInput(message: Swift.String)
+  case uninitialized(message: Swift.String)
+}
+extension AdPlayerSDK.AdPlayerError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AdPlayer : ObjectiveC.NSObject {
+  public static func initSdk(storeURL: Foundation.URL, rxProfile: AdPlayerSDK.RxProfile = .auto, overrideConfigOptions: AdPlayerSDK.OverrideConfigOptions? = nil)
+  public static func initializePublisher(_ configuration: AdPlayerSDK.AdPlayerPublisherConfiguration, _ completion: @escaping (Swift.Result<[AdPlayerSDK.AdPlayerTag], AdPlayerSDK.AdPlayerError>) -> Swift.Void = { _ in })
+  public static func initializePublisher(publisherId: Swift.String, tagId: Swift.String, completion: @escaping (Swift.Result<AdPlayerSDK.AdPlayerTag, any Swift.Error>) -> Swift.Void)
+  public static func getTagWhenReady(tagId: Swift.String, _ completion: @escaping (Swift.Result<AdPlayerSDK.AdPlayerTag, AdPlayerSDK.AdPlayerError>) -> Swift.Void)
+  public static func getTagNowOrNil(tagId: Swift.String) -> AdPlayerSDK.AdPlayerTag?
+  public static func setGdprRequired(_ required: Swift.Bool)
+  public static func setGdprConsentString(_ consent: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers final public class AdPlayerPublisherConfiguration : ObjectiveC.NSObject {
+  convenience public init(publisherId: Swift.String, _ tag: AdPlayerSDK.AdPlayerTagConfiguration, _ tags: AdPlayerSDK.AdPlayerTagConfiguration...)
+  convenience public init(publisherId: Swift.String, tagConfiguration tag: AdPlayerSDK.AdPlayerTagConfiguration, _ tags: [AdPlayerSDK.AdPlayerTagConfiguration]?)
+  final public func addTag(_ tag: AdPlayerSDK.AdPlayerTagConfiguration)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension AdPlayerSDK.AdPlayerMacro.Keys : Swift.Equatable {}
+extension AdPlayerSDK.AdPlayerMacro.Keys : Swift.Hashable {}
+extension AdPlayerSDK.AdPlayerMacro.Keys : Swift.RawRepresentable {}
+extension AdPlayerSDK.RxProfile : Swift.Equatable {}
+extension AdPlayerSDK.RxProfile : Swift.Hashable {}
+extension AdPlayerSDK.AdPlayerPlaybackState : Swift.Equatable {}
+extension AdPlayerSDK.AdPlayerPlaybackState : Swift.Hashable {}
+extension AdPlayerSDK.AdPlayerContentType : Swift.Equatable {}
+extension AdPlayerSDK.AdPlayerContentType : Swift.Hashable {}
+extension AdPlayerSDK.AdPlayerDisplayMode : Swift.Equatable {}
+extension AdPlayerSDK.AdPlayerDisplayMode : Swift.Hashable {}
+extension AdPlayerSDK.InstreamContent.CMSType : Swift.Equatable {}
+extension AdPlayerSDK.InstreamContent.CMSType : Swift.Hashable {}
+extension AdPlayerSDK.InstreamContent.CMSType : Swift.RawRepresentable {}
+extension AdPlayerSDK.AdPlayerEventType : Swift.Equatable {}
+extension AdPlayerSDK.AdPlayerEventType : Swift.Hashable {}
+extension AdPlayerSDK.AdPlayerEventType : Swift.RawRepresentable {}

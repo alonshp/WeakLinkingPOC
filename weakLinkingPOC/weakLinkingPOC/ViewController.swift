@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
 
         SDK.shared.test()
+        SDK.shared.monetization.foo()
 //        SourcesClass().test()
     }
 }

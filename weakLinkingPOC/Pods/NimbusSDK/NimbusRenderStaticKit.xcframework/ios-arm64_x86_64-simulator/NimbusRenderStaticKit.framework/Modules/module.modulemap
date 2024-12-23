@@ -1,0 +1,11 @@
+framework module NimbusRenderStaticKit {
+  umbrella header "NimbusRenderStaticKit.h"
+  export *
+
+  module * { export * }
+}
+
+module NimbusRenderStaticKit.Swift {
+  header "NimbusRenderStaticKit-Swift.h"
+  requires objc
+}

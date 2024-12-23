@@ -1,3 +1,92 @@
-PODFILE CHECKSUM: 0c9ec51309cfe63f66cbc131ab32a6d0f160f55b
+PODS:
+  - AdPlayerSDK (1.11.9):
+    - GoogleAds-IMA-iOS-SDK (~> 3.1)
+  - AlonSourcesSDK (1.0.0)
+  - AppHarbrSDK (1.14.4)
+  - Google-Mobile-Ads-SDK (11.5.0):
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleAds-IMA-iOS-SDK (3.23.0)
+  - GoogleUserMessagingPlatform (2.7.0)
+  - MobileFuseSDK (1.8.2)
+  - NimbusSDK (2.20.6):
+    - NimbusSDK/NimbusKit (= 2.20.6)
+  - NimbusSDK/NimbusCoreKit (2.20.6)
+  - NimbusSDK/NimbusGAMKit (2.20.6):
+    - Google-Mobile-Ads-SDK (>= 9.0.0)
+    - NimbusSDK/NimbusKit
+  - NimbusSDK/NimbusKit (2.20.6):
+    - MobileFuseSDK (~> 1.7)
+    - NimbusSDK/NimbusRenderKit
+    - NimbusSDK/NimbusRenderStaticKit
+    - NimbusSDK/NimbusRenderVideoKit
+    - NimbusSDK/NimbusRequestKit
+  - NimbusSDK/NimbusRenderKit (2.20.6):
+    - NimbusSDK/NimbusCoreKit
+  - NimbusSDK/NimbusRenderStaticKit (2.20.6):
+    - NimbusSDK/NimbusRenderKit
+  - NimbusSDK/NimbusRenderVideoKit (2.20.6):
+    - GoogleAds-IMA-iOS-SDK (>= 3.18.4)
+    - NimbusSDK/NimbusRenderKit
+  - NimbusSDK/NimbusRequestKit (2.20.6):
+    - NimbusSDK/NimbusCoreKit
+  - OpenWebIAU (2.0.0):
+    - AdPlayerSDK (~> 1.11.9)
+    - AppHarbrSDK (~> 1.14.0)
+    - Google-Mobile-Ads-SDK (~> 11.5.0)
+    - NimbusSDK (~> 2.20.0)
+    - NimbusSDK/NimbusGAMKit
+    - NimbusSDK/NimbusKit
+    - NimbusSDK/NimbusRenderStaticKit
+    - OpenWrapHandlerDFP (= 5.0.0)
+    - OpenWrapSDK (= 3.6.0)
+  - OpenWrapHandlerDFP (5.0.0):
+    - Google-Mobile-Ads-SDK (>= 11.0.0)
+    - OpenWrapSDK (>= 3.5.0)
+  - OpenWrapSDK (3.6.0):
+    - OpenWrapSDK/OpenWrap (= 3.6.0)
+  - OpenWrapSDK/OpenWrap (3.6.0)
+  - WeakLinkingPOCSDK (1.0.0):
+    - AlonSourcesSDK
 
-COCOAPODS: 1.14.3
+DEPENDENCIES:
+  - AlonSourcesSDK (from `./AlonSourcesSDK.podspec`)
+  - OpenWebIAU (from `../../spotim-iau-sdk`)
+  - WeakLinkingPOCSDK (from `./`)
+
+SPEC REPOS:
+  trunk:
+    - AdPlayerSDK
+    - AppHarbrSDK
+    - Google-Mobile-Ads-SDK
+    - GoogleAds-IMA-iOS-SDK
+    - GoogleUserMessagingPlatform
+    - MobileFuseSDK
+    - NimbusSDK
+    - OpenWrapHandlerDFP
+    - OpenWrapSDK
+
+EXTERNAL SOURCES:
+  AlonSourcesSDK:
+    :path: "./AlonSourcesSDK.podspec"
+  OpenWebIAU:
+    :path: "../../spotim-iau-sdk"
+  WeakLinkingPOCSDK:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  AdPlayerSDK: 92252c9ca46d37c72b817f46a77cfb510f30db1c
+  AlonSourcesSDK: bac28ef5e9b9c8e742d10ef9b8126a59c3e257d2
+  AppHarbrSDK: 6ee4ec49f386eff915c27199ba9e6966ceb648d6
+  Google-Mobile-Ads-SDK: 7db2098033ad3bfcd72a11e7503b49700a93029e
+  GoogleAds-IMA-iOS-SDK: ee2a68ed7a1a17c7bb81bdb1b81590b35a3fc8f3
+  GoogleUserMessagingPlatform: a8b56893477f67212fbc8411c139e61d463349f5
+  MobileFuseSDK: e0b927c961317444d0140322caddf5f944912e4b
+  NimbusSDK: 7513c920987ee47b0980011f05c53996d341b060
+  OpenWebIAU: dae29cf86d639d96e6f9175d40803fd99b8be098
+  OpenWrapHandlerDFP: f11f51bbbcdd696c946934a7bd2dd5741be23bb7
+  OpenWrapSDK: 23f8258cd274e39cd166dd90f43ca4d81aca1451
+  WeakLinkingPOCSDK: 66affd2a626651a520d8c0c139add782ed2d6e5f
+
+PODFILE CHECKSUM: 4e385ee28404a8e56b22d34e7711f816b59d50ac
+
+COCOAPODS: 1.16.2

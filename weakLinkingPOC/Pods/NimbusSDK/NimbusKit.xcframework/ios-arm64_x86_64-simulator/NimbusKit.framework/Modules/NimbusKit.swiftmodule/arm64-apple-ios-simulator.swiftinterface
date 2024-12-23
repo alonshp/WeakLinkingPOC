@@ -1,0 +1,128 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NimbusKit
+@_exported import NimbusCoreKit
+@_exported import NimbusKit
+@_exported import NimbusRenderKit
+@_exported import NimbusRequestKit
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol AdManager {
+  var volume: Swift.Int { get set }
+  func showAd(request: NimbusRequestKit.NimbusRequest, container: UIKit.UIView, adPresentingViewController: UIKit.UIViewController)
+}
+public protocol ThirdPartyInterstitialAdManagerType {
+  func render(ad: NimbusCoreKit.NimbusAd, adPresentingViewController: UIKit.UIViewController, companionAd: NimbusCoreKit.NimbusCompanionAd?) throws -> any NimbusCoreKit.AdController
+  func destroy()
+}
+final public class ThirdPartyInterstitialAdManager : NimbusKit.ThirdPartyInterstitialAdManagerType {
+  public init()
+  final public func render(ad: NimbusCoreKit.NimbusAd, adPresentingViewController: UIKit.UIViewController, companionAd: NimbusCoreKit.NimbusCompanionAd?) throws -> any NimbusCoreKit.AdController
+  final public func destroy()
+  @objc deinit
+}
+public protocol NimbusAdManagerDelegate : NimbusRequestKit.NimbusRequestManagerDelegate {
+  func didRenderAd(request: NimbusRequestKit.NimbusRequest, ad: NimbusCoreKit.NimbusAd, controller: any NimbusCoreKit.AdController)
+}
+@_hasMissingDesignatedInitializers final public class NimbusCustomEventUtils {
+  public static func position(in dict: [Swift.AnyHashable : Any]?, network: Swift.String, isBanner: Swift.Bool) -> Swift.String
+  @objc deinit
+}
+public enum NimbusAdManagerError : NimbusCoreKit.NimbusError {
+  case undefinedAdPresentingViewController
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public static func == (a: NimbusKit.NimbusAdManagerError, b: NimbusKit.NimbusAdManagerError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class NimbusAdManager : NimbusRequestKit.RequestManager {
+  @inlinable public static var sessionId: Swift.String {
+    get { Nimbus.shared.sessionId }
+    set { Nimbus.shared.sessionId = newValue }
+  }
+  @inlinable public static var app: NimbusRequestKit.NimbusApp? {
+    get { NimbusRequestManager.app }
+    set { NimbusRequestManager.app = newValue }
+  }
+  @inlinable public static var user: NimbusRequestKit.NimbusUser? {
+    get { NimbusRequestManager.user }
+    set { NimbusRequestManager.user = newValue }
+  }
+  @inlinable public static var blocklistBuyers: Swift.Set<Swift.String>? {
+    get { NimbusRequestManager.blocklistBuyers }
+    set { NimbusRequestManager.blocklistBuyers = newValue }
+  }
+  @inlinable public static var blockedAdvertisingDomains: Swift.Set<Foundation.URL>? {
+    get { NimbusRequestManager.blockedAdvertisingDomains }
+    set { NimbusRequestManager.blockedAdvertisingDomains = newValue }
+  }
+  @inlinable public static var blockedApps: Swift.Set<Swift.String>? {
+    get { NimbusRequestManager.blockedApps }
+    set { NimbusRequestManager.blockedApps = newValue }
+  }
+  @inlinable public static var requestInterceptors: [any NimbusRequestKit.NimbusRequestInterceptor]? {
+    get { NimbusRequestManager.requestInterceptors }
+    set { NimbusRequestManager.requestInterceptors = newValue }
+  }
+  @inlinable public static var source: NimbusRequestKit.NimbusSource? {
+    get { NimbusRequestManager.source }
+    set { NimbusRequestManager.source = newValue }
+  }
+  @inlinable public static var requestUrl: Foundation.URL? {
+    get { NimbusRequestManager.requestUrl }
+    set { NimbusRequestManager.requestUrl = newValue }
+  }
+  @inlinable public static var additionalRequestHeaders: [Swift.String : Swift.String]? {
+    get { NimbusRequestManager.additionalRequestHeaders }
+    set { NimbusRequestManager.additionalRequestHeaders = newValue }
+  }
+  @inlinable public static var auctionTimeout: Swift.Int? {
+    get { NimbusRequestManager.auctionTimeout }
+    set { NimbusRequestManager.auctionTimeout = newValue }
+  }
+  @inlinable public static var extendedIds: Swift.Set<NimbusRequestKit.NimbusExtendedId>? {
+    get { NimbusRequestManager.extendedIds }
+    set { NimbusRequestManager.extendedIds = newValue }
+  }
+  final public var volume: Swift.Int
+  weak final public var delegate: (any NimbusKit.NimbusAdManagerDelegate)?
+  public init(publisher: Swift.String? = Nimbus.shared.publisher, apiKey: Swift.String? = Nimbus.shared.apiKey)
+  @objc deinit
+}
+extension NimbusKit.NimbusAdManager : NimbusKit.AdManager {
+  final public func showAd(request: NimbusRequestKit.NimbusRequest, container: UIKit.UIView, adPresentingViewController: UIKit.UIViewController)
+  final public func showAd(request: NimbusRequestKit.NimbusRequest, container: UIKit.UIView, refreshInterval: Foundation.TimeInterval, adPresentingViewController: UIKit.UIViewController)
+  final public func showBlockingAd(request: NimbusRequestKit.NimbusRequest, closeButtonDelay: Foundation.TimeInterval = 5, adPresentingViewController: UIKit.UIViewController)
+  @available(*, deprecated, renamed: "showRewardedAd")
+  final public func showRewardedVideoAd(request: NimbusRequestKit.NimbusRequest, closeButtonDelay: Foundation.TimeInterval = 5, adPresentingViewController: UIKit.UIViewController)
+  final public func showRewardedAd(request: NimbusRequestKit.NimbusRequest, closeButtonDelay: Foundation.TimeInterval = 5, adPresentingViewController: UIKit.UIViewController)
+  final public func notifyWin(ad: NimbusCoreKit.NimbusAd, auctionData: NimbusRequestKit.NimbusAuctionData?)
+  final public func notifyLoss(ad: NimbusCoreKit.NimbusAd, auctionData: NimbusRequestKit.NimbusAuctionData?)
+}
+extension NimbusKit.NimbusAdManager : NimbusRequestKit.NimbusRequestManagerDelegate {
+  final public func didCompleteNimbusRequest(request: NimbusRequestKit.NimbusRequest, ad: NimbusCoreKit.NimbusAd)
+  final public func didFailNimbusRequest(request: NimbusRequestKit.NimbusRequest, error: any NimbusCoreKit.NimbusError)
+}
+extension NimbusKit.NimbusAdManager : NimbusRenderKit.AdVisibilityDelegate {
+  final public func didChangeVisibility(controller: any NimbusCoreKit.AdController, isVisible: Swift.Bool, hasTriggeredImpression: Swift.Bool)
+}
+extension NimbusKit.NimbusAdManager : NimbusRenderKit.NimbusAdViewControllerDelegate {
+  final public func viewWillAppear(animated: Swift.Bool)
+  final public func viewDidAppear(animated: Swift.Bool)
+  final public func viewWillDisappear(animated: Swift.Bool)
+  final public func viewDidDisappear(animated: Swift.Bool)
+  final public func didCloseAd(adView: NimbusRenderKit.NimbusAdView)
+}
+extension NimbusKit.NimbusAdManager : NimbusCoreKit.AdControllerDelegate {
+  final public func didReceiveNimbusEvent(controller: any NimbusCoreKit.AdController, event: NimbusCoreKit.NimbusEvent)
+  final public func didReceiveNimbusError(controller: any NimbusCoreKit.AdController, error: any NimbusCoreKit.NimbusError)
+}
+extension NimbusKit.NimbusAdManagerError : Swift.Equatable {}
+extension NimbusKit.NimbusAdManagerError : Swift.Hashable {}

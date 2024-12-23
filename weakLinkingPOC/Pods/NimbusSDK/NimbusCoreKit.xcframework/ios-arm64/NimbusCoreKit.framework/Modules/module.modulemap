@@ -1,0 +1,11 @@
+framework module NimbusCoreKit {
+  umbrella header "NimbusCoreKit.h"
+  export *
+
+  module * { export * }
+}
+
+module NimbusCoreKit.Swift {
+  header "NimbusCoreKit-Swift.h"
+  requires objc
+}

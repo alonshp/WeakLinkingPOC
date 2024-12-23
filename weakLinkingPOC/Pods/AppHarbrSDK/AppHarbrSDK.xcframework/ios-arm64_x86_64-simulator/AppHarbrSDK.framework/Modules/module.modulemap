@@ -1,0 +1,11 @@
+framework module AppHarbrSDK {
+  umbrella header "AppHarbrSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module AppHarbrSDK.Swift {
+  header "AppHarbrSDK-Swift.h"
+  requires objc
+}

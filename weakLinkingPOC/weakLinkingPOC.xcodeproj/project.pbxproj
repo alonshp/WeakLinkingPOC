@@ -23,12 +23,8 @@
 /* Begin PBXBuildFile section */
 		00B311380305AF3EA6F780D8 /* Pods_weakLinkingPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB71E45EBB5A18A519E7DAFD /* Pods_weakLinkingPOC.framework */; };
 		16047EC82CB67A250086E606 /* AdParamsBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16047EC72CB67A250086E606 /* AdParamsBridge.swift */; };
-		16047ECA2CB67AB40086E606 /* OptionalFrameworkSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16047EC92CB67AB40086E606 /* OptionalFrameworkSDK.xcframework */; };
-		161933662CAABE61005C517E /* weakLinkingPOCSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C75E172CA426D500D02AF0 /* weakLinkingPOCSDK.framework */; };
 		161933A52CAAE141005C517E /* SourcesSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 161933A42CAAE141005C517E /* SourcesSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		161933AF2CAAE150005C517E /* SourcesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161933AE2CAAE150005C517E /* SourcesClass.swift */; };
-		161933B22CAAE882005C517E /* AlonSourcesSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161933A22CAAE141005C517E /* AlonSourcesSDK.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		161933B72CAAF26F005C517E /* AlonSourcesSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161933A22CAAE141005C517E /* AlonSourcesSDK.framework */; };
 		16C75DFE2CA4269A00D02AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C75DFD2CA4269A00D02AF0 /* AppDelegate.swift */; };
 		16C75E002CA4269A00D02AF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C75DFF2CA4269A00D02AF0 /* SceneDelegate.swift */; };
 		16C75E022CA4269A00D02AF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C75E012CA4269A00D02AF0 /* ViewController.swift */; };
@@ -37,24 +33,9 @@
 		16C75E0A2CA4269B00D02AF0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 16C75E092CA4269B00D02AF0 /* Base */; };
 		16C75E1A2CA426D500D02AF0 /* weakLinkingPOCSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C75E192CA426D500D02AF0 /* weakLinkingPOCSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16C75E272CA4270F00D02AF0 /* SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C75E262CA4270F00D02AF0 /* SDK.swift */; };
+		2B2011BC1E5C0C548966B043 /* Pods_AlonSourcesSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306335506EFBE882801A2782 /* Pods_AlonSourcesSDK.framework */; };
+		A81C5533A215D897BAC69909 /* Pods_weakLinkingPOCSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F68C70360DE1C5E45F29A36 /* Pods_weakLinkingPOCSDK.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		161933B42CAAE882005C517E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 16C75DF22CA4269A00D02AF0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 161933A12CAAE141005C517E;
-			remoteInfo = SourcesSDK;
-		};
-		161933B92CAAF26F005C517E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 16C75DF22CA4269A00D02AF0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 161933A12CAAE141005C517E;
-			remoteInfo = SourcesSDK;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		161933D52CB40411005C517E /* Embed Frameworks */ = {
@@ -71,7 +52,6 @@
 
 /* Begin PBXFileReference section */
 		16047EC72CB67A250086E606 /* AdParamsBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdParamsBridge.swift; sourceTree = "<group>"; };
-		16047EC92CB67AB40086E606 /* OptionalFrameworkSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OptionalFrameworkSDK.xcframework; path = ../OptionalFramework/Release/OptionalFrameworkSDK.xcframework; sourceTree = "<group>"; };
 		1619335F2CA4544B005C517E /* weakLinkingPOCSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = weakLinkingPOCSDK.xcframework; path = Release/weakLinkingPOCSDK.xcframework; sourceTree = "<group>"; };
 		1619339C2CAADF36005C517E /* WeakLinkingPOCSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = WeakLinkingPOCSDK.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		161933A22CAAE141005C517E /* AlonSourcesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlonSourcesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,8 +70,13 @@
 		16C75E192CA426D500D02AF0 /* weakLinkingPOCSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weakLinkingPOCSDK.h; sourceTree = "<group>"; };
 		16C75E262CA4270F00D02AF0 /* SDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDK.swift; sourceTree = "<group>"; };
 		1F68C70360DE1C5E45F29A36 /* Pods_weakLinkingPOCSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weakLinkingPOCSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		306335506EFBE882801A2782 /* Pods_AlonSourcesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlonSourcesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C2CE74BAAE66DE7BD2C9D1E /* Pods-AlonSourcesSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlonSourcesSDK.debug.xcconfig"; path = "Target Support Files/Pods-AlonSourcesSDK/Pods-AlonSourcesSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		65B6A85C7B2F76F8028F355C /* Pods-weakLinkingPOCSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weakLinkingPOCSDK.release.xcconfig"; path = "Target Support Files/Pods-weakLinkingPOCSDK/Pods-weakLinkingPOCSDK.release.xcconfig"; sourceTree = "<group>"; };
 		98C002649605500EB8611ABA /* Pods-weakLinkingPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weakLinkingPOC.release.xcconfig"; path = "Target Support Files/Pods-weakLinkingPOC/Pods-weakLinkingPOC.release.xcconfig"; sourceTree = "<group>"; };
+		9B11EC7E772E0635F7387E16 /* Pods-AlonSourcesSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlonSourcesSDK.release.xcconfig"; path = "Target Support Files/Pods-AlonSourcesSDK/Pods-AlonSourcesSDK.release.xcconfig"; sourceTree = "<group>"; };
 		EB71E45EBB5A18A519E7DAFD /* Pods_weakLinkingPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weakLinkingPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEDC235EB0C6104DD34E59B2 /* Pods-weakLinkingPOCSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weakLinkingPOCSDK.debug.xcconfig"; path = "Target Support Files/Pods-weakLinkingPOCSDK/Pods-weakLinkingPOCSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		F53B584E1D592A335AA432D7 /* Pods-weakLinkingPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weakLinkingPOC.debug.xcconfig"; path = "Target Support Files/Pods-weakLinkingPOC/Pods-weakLinkingPOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16047ECA2CB67AB40086E606 /* OptionalFrameworkSDK.xcframework in Frameworks */,
+				2B2011BC1E5C0C548966B043 /* Pods_AlonSourcesSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,8 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				161933B72CAAF26F005C517E /* AlonSourcesSDK.framework in Frameworks */,
-				161933662CAABE61005C517E /* weakLinkingPOCSDK.framework in Frameworks */,
 				00B311380305AF3EA6F780D8 /* Pods_weakLinkingPOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				161933B22CAAE882005C517E /* AlonSourcesSDK.framework in Frameworks */,
+				A81C5533A215D897BAC69909 /* Pods_weakLinkingPOCSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +122,6 @@
 		16C75DF12CA4269A00D02AF0 = {
 			isa = PBXGroup;
 			children = (
-				16047EC92CB67AB40086E606 /* OptionalFrameworkSDK.xcframework */,
 				1619335F2CA4544B005C517E /* weakLinkingPOCSDK.xcframework */,
 				16C75DFC2CA4269A00D02AF0 /* weakLinkingPOC */,
 				16C75E182CA426D500D02AF0 /* weakLinkingPOCSDK */,
@@ -189,6 +171,7 @@
 			children = (
 				EB71E45EBB5A18A519E7DAFD /* Pods_weakLinkingPOC.framework */,
 				1F68C70360DE1C5E45F29A36 /* Pods_weakLinkingPOCSDK.framework */,
+				306335506EFBE882801A2782 /* Pods_AlonSourcesSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,6 +181,10 @@
 			children = (
 				F53B584E1D592A335AA432D7 /* Pods-weakLinkingPOC.debug.xcconfig */,
 				98C002649605500EB8611ABA /* Pods-weakLinkingPOC.release.xcconfig */,
+				4C2CE74BAAE66DE7BD2C9D1E /* Pods-AlonSourcesSDK.debug.xcconfig */,
+				9B11EC7E772E0635F7387E16 /* Pods-AlonSourcesSDK.release.xcconfig */,
+				EEDC235EB0C6104DD34E59B2 /* Pods-weakLinkingPOCSDK.debug.xcconfig */,
+				65B6A85C7B2F76F8028F355C /* Pods-weakLinkingPOCSDK.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -228,10 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 161933AA2CAAE141005C517E /* Build configuration list for PBXNativeTarget "AlonSourcesSDK" */;
 			buildPhases = (
+				E817B3DD3EA3903FCF8F43BD /* [CP] Check Pods Manifest.lock */,
 				1619339D2CAAE141005C517E /* Headers */,
 				1619339E2CAAE141005C517E /* Sources */,
 				1619339F2CAAE141005C517E /* Frameworks */,
 				161933A02CAAE141005C517E /* Resources */,
+				5684401EBD0737CF37C0EA0D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,11 +240,12 @@
 				16C75DF72CA4269A00D02AF0 /* Frameworks */,
 				16C75DF82CA4269A00D02AF0 /* Resources */,
 				161933D52CB40411005C517E /* Embed Frameworks */,
+				BFDCAF9077184C40BE30A817 /* [CP] Embed Pods Frameworks */,
+				1CA8FC4FFECF1315B34DB211 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				161933BA2CAAF26F005C517E /* PBXTargetDependency */,
 			);
 			name = weakLinkingPOC;
 			productName = weakLinkingPOC;
@@ -266,6 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16C75E1F2CA426D500D02AF0 /* Build configuration list for PBXNativeTarget "weakLinkingPOCSDK" */;
 			buildPhases = (
+				99E069CAE48AB6F60367F009 /* [CP] Check Pods Manifest.lock */,
 				16C75E122CA426D500D02AF0 /* Headers */,
 				16C75E132CA426D500D02AF0 /* Sources */,
 				16C75E142CA426D500D02AF0 /* Frameworks */,
@@ -274,7 +265,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				161933B52CAAE882005C517E /* PBXTargetDependency */,
 			);
 			name = weakLinkingPOCSDK;
 			productName = weakLinkingPOCSDK;
@@ -373,6 +363,79 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbash -x ./scripts/create_xcframework_script.sh \"${CONFIGURATION}\"\n";
 		};
+		1CA8FC4FFECF1315B34DB211 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weakLinkingPOC/Pods-weakLinkingPOC-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weakLinkingPOC/Pods-weakLinkingPOC-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-weakLinkingPOC/Pods-weakLinkingPOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5684401EBD0737CF37C0EA0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlonSourcesSDK/Pods-AlonSourcesSDK-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlonSourcesSDK/Pods-AlonSourcesSDK-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlonSourcesSDK/Pods-AlonSourcesSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99E069CAE48AB6F60367F009 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weakLinkingPOCSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFDCAF9077184C40BE30A817 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weakLinkingPOC/Pods-weakLinkingPOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weakLinkingPOC/Pods-weakLinkingPOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-weakLinkingPOC/Pods-weakLinkingPOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DDAC32A00EA3873522EAE8AC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,6 +452,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-weakLinkingPOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E817B3DD3EA3903FCF8F43BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlonSourcesSDK-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -427,19 +512,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		161933B52CAAE882005C517E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 161933A12CAAE141005C517E /* AlonSourcesSDK */;
-			targetProxy = 161933B42CAAE882005C517E /* PBXContainerItemProxy */;
-		};
-		161933BA2CAAF26F005C517E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 161933A12CAAE141005C517E /* AlonSourcesSDK */;
-			targetProxy = 161933B92CAAF26F005C517E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		16C75E032CA4269A00D02AF0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -462,6 +534,7 @@
 /* Begin XCBuildConfiguration section */
 		161933AB2CAAE141005C517E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C2CE74BAAE66DE7BD2C9D1E /* Pods-AlonSourcesSDK.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -474,7 +547,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -505,6 +578,7 @@
 		};
 		161933AC2CAAE141005C517E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B11EC7E772E0635F7387E16 /* Pods-AlonSourcesSDK.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -516,7 +590,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -672,6 +746,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q2Q7GJNSSL;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = weakLinkingPOC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -705,6 +780,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q2Q7GJNSSL;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = weakLinkingPOC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -731,6 +807,7 @@
 		};
 		16C75E202CA426D500D02AF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEDC235EB0C6104DD34E59B2 /* Pods-weakLinkingPOCSDK.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -772,6 +849,7 @@
 		};
 		16C75E212CA426D500D02AF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65B6A85C7B2F76F8028F355C /* Pods-weakLinkingPOCSDK.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
